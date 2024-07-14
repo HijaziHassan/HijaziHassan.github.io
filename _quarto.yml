@@ -1,8 +1,9 @@
 project:
   type: website
+  output-dir: docs
 
 website:
-  title: "HassanHijazi.github.io"
+  title: "Hassan M. Hijazi"
   navbar:
     left:
       - href: index.qmd
