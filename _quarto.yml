@@ -5,16 +5,19 @@ project:
 website:
   title: "Hassan M. Hijazi"
   navbar:
-    left:
+    right:
       - href: index.qmd
         text: Home
-      - about.qmd
+      - href: histonePTM.Rmd
+        text: My R package
 
 format:
   html:
-    theme: cosmo
+    theme:
+      light: minty
+      dark: solar
     css: styles.css
-    toc: true
+    toc: FALSE
+    page-layout: full
 
-
-
+editor: visual
