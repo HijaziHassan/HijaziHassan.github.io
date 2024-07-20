@@ -1,9 +1,53 @@
 ---
-title: "HassanHijazi.github.io"
+title: "Hassan M. Hijazi"
+image: media/face.JPG
+toc: false
 about:
-    template: jolla
+  template: trestles
+  image-shape: round
+  image-width: 10em
+  links:
+    - icon: linkedin
+      text: LinkedIn
+      href: https://www.linkedin.com/in/hijaziihassan/
+    - icon: github
+      text: GitHub
+      href: https://github.com/HijaziHassan
+    - icon: orcid
+      text: ORCiD
+      href: https://orcid.org/0000-0001-6408-1768
+    - icon: envelope
+      text: Email
+      href: mailto:hassan.hijazi@cea.fr
 ---
 
-This is a Quarto website.
+```{r echo = FALSE, warning=FALSE}
+library(tinytex)
+suppressPackageStartupMessages(library(icons))
+```
 
-To learn more about Quarto websites visit <https://quarto.org/docs/websites>.
+## Hi there!
+
+Thank you for dropping by! My name is Hassan and here are a few words about me:
+
+## What I am currently doing?
+
+I am a PhD student at [EDyP lab](https://www.edyp.fr/web/) (CEA - Grenoble) since 10/2021.
+
+I use Mass spectrometry technique to study histone post-translational modificaitons (hPTMs) in the context of Huntington's Disease (HD).
+
+I am writing my first author paper about some bullet points to consider when validating histone MS/MS PTMs. This will help scientists working on hPTMs avoid reporting false positive identifications as there is no way to control for the false discovery rate of modified peptides akin to the target-decoy strategy used standardly in proteomics. PTM A 2^nd^ article will be about the characterization and utility of a derivatizating agent used to probe hPTMs.
+
+Beside, I use **R** and **Python** programming languages to analyze my data and visualize the results. I wrapped many functions that I used during my project into an R package (still under development), which you can take a look into this incomplete vignettes that I prepared.
+
+## From Where I come?
+
+I did two internships each lasted fro 6 months.
+
+The first was related to synthetic biology at ETH in Switzerland (2020) and the other was into mass spectrometry at IBS-Grenoble (2021). In the latter, I used MALDI-MS to study the effect of some detergents on the ionization of intact proteins.
+
+## Next steps ...
+
+I am searching for a project where I can invest the knowledge and skills that I have acquired in proteomics and programming through my PhD journey.
+
+This position ideally lies at the interface between wet and dry lab in which data are acquired, cleaned and scrutinized, to test a statistical approach or to feedback into a machine learning model.
