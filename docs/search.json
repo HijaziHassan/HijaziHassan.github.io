@@ -2,9 +2,9 @@
   {
     "objectID": "index.html",
     "href": "index.html",
-    "title": "HassanHijazi.github.io",
+    "title": "Hassan M. Hijazi",
     "section": "",
-    "text": "This is a Quarto website.\nTo learn more about Quarto websites visit https://quarto.org/docs/websites."
+    "text": "Thank you for dropping by! My name is Hassan and here are a few words about me:"
   },
   {
     "objectID": "about.html",
@@ -12,5 +12,187 @@
     "title": "About",
     "section": "",
     "text": "About this site"
+  },
+  {
+    "objectID": "index.html#hi-there",
+    "href": "index.html#hi-there",
+    "title": "Hassan M. Hijazi",
+    "section": "",
+    "text": "Thank you for dropping by! My name is Hassan and here are a few words about me:"
+  },
+  {
+    "objectID": "index.html#what-i-am-currently-doing",
+    "href": "index.html#what-i-am-currently-doing",
+    "title": "Hassan M. Hijazi",
+    "section": "What I am currently doing?",
+    "text": "What I am currently doing?\nI am a PhD student at EDyP lab (CEA - Grenoble) since 10/2021.\nI use Mass spectrometry technique to study histone post-translational modificaitons (hPTMs) in the context of Huntington’s Disease (HD).\nI am writing my first author paper about some bullet points to consider when validating histone MS/MS PTMs. This will help scientists working on hPTMs avoid reporting false positive identifications as there is no way to control for the false discovery rate of modified peptides akin to the target-decoy strategy used standardly in proteomics. PTM A 2nd article will be about the characterization and utility of a derivatizating agent used to probe hPTMs.\nBeside, I use R and Python programming languages to analyze my data and visualize the results. I wrapped many functions that I used during my project into an R package (still under development), which you can take a look into this incomplete vignettes that I prepared."
+  },
+  {
+    "objectID": "index.html#from-where-i-come",
+    "href": "index.html#from-where-i-come",
+    "title": "Hassan M. Hijazi",
+    "section": "From Where I come?",
+    "text": "From Where I come?\nI did two internships each lasted fro 6 months.\nThe first was related to synthetic biology at ETH in Switzerland (2020) and the other was into mass spectrometry at IBS-Grenoble (2021). In the latter, I used MALDI-MS to study the effect of some detergents on the ionization of intact proteins."
+  },
+  {
+    "objectID": "index.html#next-steps",
+    "href": "index.html#next-steps",
+    "title": "Hassan M. Hijazi",
+    "section": "Next steps …",
+    "text": "Next steps …\nI am searching for a project where I can invest the knowledge and skills that I have acquired in proteomics and programming through my PhD journey.\nThis position ideally lies at the interface between wet and dry lab in which data are acquired, cleaned and scrutinized, to test a statistical approach or to feedback into a machine learning model."
+  },
+  {
+    "objectID": "histonePTM.html",
+    "href": "histonePTM.html",
+    "title": "histonePTM R package",
+    "section": "",
+    "text": "library(histonePTM)\nlibrary(dplyr)\nlibrary(readxl)\nA collection of functions to make your life easier."
+  },
+  {
+    "objectID": "histonePTM.html#mgf_searchdiagion",
+    "href": "histonePTM.html#mgf_searchdiagion",
+    "title": "histonePTM R package",
+    "section": "2.1 mgf_searchDiagIon()",
+    "text": "2.1 mgf_searchDiagIon()\nIt searches in all MS/MS scan for pre-defined m/z of diagnostic ions. It reports their presence and their relative intensities relative to the base peak.\n\n\nmgf_file &lt;- 'toyExample.mgf'\n\nList_DiagIons &lt;- c(156.102, 126.091)\n\ntolerance = 0.001\n\nmgf_searchDiagIon(mgf_file = mgf_file, \n                  diag_ion = List_DiagIons, \n                  tol = tolerance, \n                  save_file = FALSE)\n#&gt; # A tibble: 29 × 7\n#&gt;    file       diag_ion diag_relint  scan prec_mz prec_z    rt\n#&gt;    &lt;chr&gt;         &lt;dbl&gt;       &lt;dbl&gt; &lt;int&gt;   &lt;dbl&gt;  &lt;int&gt; &lt;dbl&gt;\n#&gt;  1 toyExample     126.       0.902 15338    822.      2  33.7\n#&gt;  2 toyExample     156.       1      5920    508.      2  17.4\n#&gt;  3 toyExample     156.       0.007 26917    375.      2  75.5\n#&gt;  4 toyExample     126.       0.032 26917    375.      2  75.5\n#&gt;  5 toyExample     156.       1      6289    398.      4  18.6\n#&gt;  6 toyExample     126.       0.043  6289    398.      4  18.6\n#&gt;  7 toyExample     126.       1      6137    395.      4  18.1\n#&gt;  8 toyExample     156.       0.182 26987    404.      2  75.7\n#&gt;  9 toyExample     126.       0.021 26987    404.      2  75.7\n#&gt; 10 toyExample     156.       0.003 27008    356.      2  75.8\n#&gt; # ℹ 19 more rows"
+  },
+  {
+    "objectID": "histonePTM.html#mgf_extractms2scan",
+    "href": "histonePTM.html#mgf_extractms2scan",
+    "title": "histonePTM R package",
+    "section": "2.1 mgf_extractMS2scan()",
+    "text": "2.1 mgf_extractMS2scan()\nIt extracts specific scan(s) as dataframes with columns: 1. mgf: Name of the mgf file with extension. 2. m/z: 3. intensity 4. scan\n\n\nscans = c(5920, 6289)\nmgf_extractMS2scan(mgf_file ='toyExample.mgf', \n                   scan= scans,  \n                   save_file = FALSE, #save results as csv file\n                   export_mgf = FALSE #save selected scans as mgf file\n                   )\n#&gt; Start data import from 1 files ... done\n#&gt; ✔ The file toyExample.mgf is converted into a 'Spectra' object.\n#&gt; # A tibble: 120 × 4\n#&gt;    mgf             scan    mz intensity\n#&gt;    &lt;chr&gt;          &lt;int&gt; &lt;dbl&gt;     &lt;dbl&gt;\n#&gt;  1 toyExample.mgf  5920  84.1     1714.\n#&gt;  2 toyExample.mgf  5920  92.5      897.\n#&gt;  3 toyExample.mgf  5920  94.2      841.\n#&gt;  4 toyExample.mgf  5920 120.       925.\n#&gt;  5 toyExample.mgf  5920 144.       819.\n#&gt;  6 toyExample.mgf  5920 156.      7279.\n#&gt;  7 toyExample.mgf  5920 169.       893.\n#&gt;  8 toyExample.mgf  5920 173.      1792.\n#&gt;  9 toyExample.mgf  5920 175.      1018.\n#&gt; 10 toyExample.mgf  5920 202.       815.\n#&gt; # ℹ 110 more rows"
+  },
+  {
+    "objectID": "histonePTM.html#mgf_extractscan",
+    "href": "histonePTM.html#mgf_extractscan",
+    "title": "histonePTM R package",
+    "section": "2.2 mgf_extractScan()",
+    "text": "2.2 mgf_extractScan()\nSame function as above but faster (Python-based ran in R).\n\n\nscan15338 &lt;- mgf_extractScan(mgf_file = 'toyExample.mgf', scan = 15338)\n\nhead(scan15338)\n#&gt; # A tibble: 6 × 4\n#&gt;   mgf         scan    mz intensity\n#&gt;   &lt;chr&gt;      &lt;int&gt; &lt;dbl&gt;     &lt;dbl&gt;\n#&gt; 1 toyExample 15338  84.1  6366502.\n#&gt; 2 toyExample 15338  86.4   534698.\n#&gt; 3 toyExample 15338 110.    644364.\n#&gt; 4 toyExample 15338 110.    387260.\n#&gt; 5 toyExample 15338 112.    595217.\n#&gt; 6 toyExample 15338 112.    327108."
+  },
+  {
+    "objectID": "histonePTM.html#plot_annotatespectrum",
+    "href": "histonePTM.html#plot_annotatespectrum",
+    "title": "histonePTM R package",
+    "section": "3.1 plot_annotateSpectrum()",
+    "text": "3.1 plot_annotateSpectrum()\n\n\nplot_annotateSpectrum(\n  Profrma_peptide = \"K[+98.03678]SAPATGGVK[+56.02622]K[+56.02622]PHR\",\nprec_mz = 822.465,\nprec_z = 2,\nmz = scan15338$mz,\nintensity = scan15338$intensity,\ntitle= \"H3 K27_R40 ac-pr-pr [2+]\",\noutput_plot_name = \"myplot.png\")\n#&gt; Plot saved as 'myplot.png'"
+  },
+  {
+    "objectID": "histonePTM.html#plot_scheduledprm",
+    "href": "histonePTM.html#plot_scheduledprm",
+    "title": "histonePTM R package",
+    "section": "3.2 plot_scheduledPRM()",
+    "text": "3.2 plot_scheduledPRM()\nIt counts and plots the number of precursors monitored per time unit in scheduled PRM experiment. It takes a list of m/z and RT as input as well as the retention time window size and peak width.\n\n\npeptides_df &lt;- data.frame(\n\nmoz= c(553.9903,830.4623,844.4781,549.3170,\n         837.4703,822.4650,836.4807,543.9861,\n         548.6583,829.4728,844.4781,858.4938,\n         558.6614,563.3330,851.4865,836.4807,\n         850.4963,553.3290,558.0017,843.4885,\n         487.2567,644.8226,683.8279,547.2980,\n         669.8381,699.3384,726.8357,622.8535,\n         776.9298),\n\n\nrt= c(26.79,30.15,36.62,23.51,32.60,\n       31.58,37.41,23.94,23.83,33.38,\n       35.11,41.70,28.49,28.32,37.64,\n       40.43,46.31,33.47,33.31,42.83,\n       12.22,23.02,27.85,31.76,34.15,\n       40.01,44.72,52.09,62.64)\n)\n\n\nplot_scheduledPRM(df = peptides_df,\n                  rt_col = rt, \n                  mz_col = moz, \n                  rt_window = c(3, 5), \n                  peak_width = 0.3, \n                  save_plot = FALSE)"
+  },
+  {
+    "objectID": "histonePTM.html#plot_scheduledprmranges",
+    "href": "histonePTM.html#plot_scheduledprmranges",
+    "title": "histonePTM R package",
+    "section": "3.3 plot_scheduledPRMranges()",
+    "text": "3.3 plot_scheduledPRMranges()\nA plot as above, but shows the the rt range of each m/z allowing visually to see how many concurrent precursor are overlapping at a certain time point.\n\ndf &lt;- readr::read_csv('isolation_list.csv', show_col_types = FALSE)\nplot_schdueldPRMranges(df = df, \n                        tr_start = `Start [min]`, \n                        tr_end = `End [min]`, \n                        y_axis = `Mass [m/z]`,\n                        label = `Mass [m/z]`, \n                        save_plot = FALSE  )\n#&gt; Warning in ggplot2::geom_text(ggplot2::aes(label = round({: Ignoring unknown\n#&gt; parameters: `face`"
+  },
+  {
+    "objectID": "histonePTM.html#plot_mirrorspectra",
+    "href": "histonePTM.html#plot_mirrorspectra",
+    "title": "histonePTM R package",
+    "section": "3.4 plot_mirrorSpectra()",
+    "text": "3.4 plot_mirrorSpectra()\nIt mirrors two spectra, It takes as input m/z and intensity of each fragment ion. Another necessary column to provide is the grouping_col that contain the source of each fragment ion. The those tags should be specifified in top_spec and bottom_spec. The function does not have an aption to annotated the spectra.\n\nscanraw &lt;- mgf_extractScan(mgf_file = 'raw.mgf', scan = 8730)\nscanprocessed &lt;- mgf_extractScan(mgf_file = 'SN_MH.mgf', scan = 8730)\n\ndf_mirror &lt;- bind_rows(scanraw, scanprocessed)\n\nplot_mirrorSpectra(data = df_mirror, \n                   mz_col = mz, \n                   intensity_col = intensity, \n                   grouping_col = mgf, \n                   top_spec = \"SN_MH\", \n                   bottom_spec = \"raw\", \n                   title = \"\")"
+  },
+  {
+    "objectID": "histonePTM.html#plot_h3vsh33",
+    "href": "histonePTM.html#plot_h3vsh33",
+    "title": "histonePTM R package",
+    "section": "3.5 plot_H3vsH33()",
+    "text": "3.5 plot_H3vsH33()\nA plot that shows relative abundance of canonical H3 versus H3.3 based on H3 K27-R40 peptidoforms.\n\n\ndf_H3 &lt;- readxl::read_excel(path = '20231102_H3_STR_SUM.xlsx', \n                               sheet = 'Best PSM from protein sets')\n\nplot_H3vsH33(df = df_H3, seq_col = sequence, seq_ptm_col = modifications, int_col = starts_with('abundance_'))"
+  },
+  {
+    "objectID": "histonePTM.html#plot_jitterbarintvsptm",
+    "href": "histonePTM.html#plot_jitterbarintvsptm",
+    "title": "histonePTM R package",
+    "section": "3.6 plot_jitterbarIntvsPTM()",
+    "text": "3.6 plot_jitterbarIntvsPTM()\nA bar plot with scattered points showing the mean/median of the measurement of each condition.\n\n\ndf_K9K14_long &lt;- readxl::read_excel(path = 'K9K14_long.xlsx') \n\nplot_jitterbarIntvsPTM(dataset = df_K9K14_long,\n                       x_axis = PTM,\n                       y_axis = intensity,\n                       condition = Condition,\n                       id_col = 'H3 (K9_K14)')\n#&gt; Plotting: H3 (K9_K14)"
+  },
+  {
+    "objectID": "histonePTM.html#plot_intdensity",
+    "href": "histonePTM.html#plot_intdensity",
+    "title": "histonePTM R package",
+    "section": "3.7 plot_intDensity()",
+    "text": "3.7 plot_intDensity()\n\n\ndf &lt;- read_xlsx(path = 'K9K14.xlsx')\nplot_intDensity(df = df, int_col = dplyr::starts_with(\"abundance_\"))"
+  },
+  {
+    "objectID": "histonePTM.html#quant_relintensity",
+    "href": "histonePTM.html#quant_relintensity",
+    "title": "histonePTM R package",
+    "section": "4.1 quant_relIntensity()",
+    "text": "4.1 quant_relIntensity()\nCalculates the relative intensity of each peptide in each sample based on the following equation: .\n\ndf_K9K14 &lt;- readxl::read_excel(path = 'K9K14.xlsx') \n\ndf_K9K14_norm &lt;- quant_relIntensity(df = df_K9K14, \n                   select_cols = starts_with('abundance_'), \n                   grouping_var = sequence)\n\n\n#before normalization\n\ndf_K9K14 |&gt; select(starts_with('abundance_')) |&gt; head()\n#&gt; # A tibble: 6 × 10\n#&gt;   abundance_F173186 abundance_F173188 abundance_F173189 abundance_F173192\n#&gt;               &lt;dbl&gt;             &lt;dbl&gt;             &lt;dbl&gt;             &lt;dbl&gt;\n#&gt; 1        475453472         514254080         958833792         182273696 \n#&gt; 2         38940812          43781780          90300080          57599136 \n#&gt; 3       1124633344        1632991360        1767608320        1452094720 \n#&gt; 4         75190408          77742064         233615456          21107264 \n#&gt; 5           366894.           611339.          1479332.           653948.\n#&gt; 6        775680448        1144565888        1296215680        1139372160 \n#&gt; # ℹ 6 more variables: abundance_F173193 &lt;dbl&gt;, abundance_F173194 &lt;dbl&gt;,\n#&gt; #   abundance_F173191 &lt;dbl&gt;, abundance_F173187 &lt;dbl&gt;, abundance_F173190 &lt;dbl&gt;,\n#&gt; #   abundance_F173195 &lt;dbl&gt;\n\n#after normalization\ndf_K9K14_norm |&gt; select(starts_with('abundance_')) |&gt; head()\n#&gt; # A tibble: 6 × 10\n#&gt;   abundance_F173186 abundance_F173188 abundance_F173189 abundance_F173192\n#&gt;               &lt;dbl&gt;             &lt;dbl&gt;             &lt;dbl&gt;             &lt;dbl&gt;\n#&gt; 1         0.129              0.112             0.156             0.0445  \n#&gt; 2         0.0106             0.00952           0.0147            0.0141  \n#&gt; 3         0.306              0.355             0.287             0.354   \n#&gt; 4         0.0204             0.0169            0.0380            0.00515 \n#&gt; 5         0.0000998          0.000133          0.000240          0.000160\n#&gt; 6         0.211              0.249             0.211             0.278   \n#&gt; # ℹ 6 more variables: abundance_F173193 &lt;dbl&gt;, abundance_F173194 &lt;dbl&gt;,\n#&gt; #   abundance_F173191 &lt;dbl&gt;, abundance_F173187 &lt;dbl&gt;, abundance_F173190 &lt;dbl&gt;,\n#&gt; #   abundance_F173195 &lt;dbl&gt;"
+  },
+  {
+    "objectID": "histonePTM.html#blib_seamlessidswap",
+    "href": "histonePTM.html#blib_seamlessidswap",
+    "title": "histonePTM R package",
+    "section": "5.1 blib_seamlessIDswap()",
+    "text": "5.1 blib_seamlessIDswap()\nWhen building a spectral library, Skyline can create two libraries. The main *.blib library and the second *_redundant.blib. In histones, some times the best representative spectrum could be present in the redundant library not in the main one. To keep everything neat, this function takes the identification from the redundant library and place it in the main library and place the main identification in the redundant library. To confirm the successful switch, the new identification will be highlighted in red and the other will turn black.\n\n#blib_seamlessIDswap(db_main = , db_redundant = , rt = , mz = , tol = , file = )"
+  },
+  {
+    "objectID": "histonePTM.html#seq_aacountplot",
+    "href": "histonePTM.html#seq_aacountplot",
+    "title": "histonePTM R package",
+    "section": "6.1 seq_AAcountplot()",
+    "text": "6.1 seq_AAcountplot()\nCount the occurrences of a residue in a sequence and compare it with other sequences.\n\nH3_seq &lt;-  \"ARTKQTARKSTGGKAPRKQLATKAARKSAPATGGVKKPHRYRPGTVALREIRRYQKSTELLIRKLPFQRLVREIAQDFKTDLRFQSSAVMALQEACEAYLVGLFEDTNLCAIHAKRVTIMPKDIQLARRIRGERA\"\n\nH4_seq &lt;-  \"SGRGKGGKGLGKGGAKRHRKVLRDNIQGITKPAIRRLARRGGVKRISGLIYEETRGVLKVFLENVIRDAVTYTEHAKRKTVTAMDVVYALKRQGRTLYGFGG\"\n\nseq_AAcountplot(H3_seq, H4_seq, plot = TRUE)\n\n\n\n#&gt; # A tibble: 37 × 3\n#&gt;    seq    a.a   relative_percent\n#&gt;    &lt;chr&gt;  &lt;chr&gt;            &lt;dbl&gt;\n#&gt;  1 H3_seq A                   13\n#&gt;  2 H3_seq R                   13\n#&gt;  3 H3_seq T                    7\n#&gt;  4 H3_seq K                   10\n#&gt;  5 H3_seq Q                    6\n#&gt;  6 H3_seq S                    4\n#&gt;  7 H3_seq G                    5\n#&gt;  8 H3_seq P                    4\n#&gt;  9 H3_seq L                    9\n#&gt; 10 H3_seq V                    4\n#&gt; # ℹ 27 more rows"
+  },
+  {
+    "objectID": "histonePTM.html#seq_gethistpeptide",
+    "href": "histonePTM.html#seq_gethistpeptide",
+    "title": "histonePTM R package",
+    "section": "seq_getHistPeptide()",
+    "text": "seq_getHistPeptide()\n\n\ndf_new &lt;- seq_getHistPeptide(df = df_H3, seq_col = sequence, histoneProtein = \"H4\")\n\nunique(df_new$sequence)\n#&gt; [1] \"ISGLIYEETR\"     \"DAVTYTEHAKR\"    \"DNIQGITKPAIR\"   \"GKGGKGLGKGGAKR\"\n#&gt; [5] \"KTVTAMDVVYALKR\""
+  },
+  {
+    "objectID": "histonePTM.html#litreview",
+    "href": "histonePTM.html#litreview",
+    "title": "histonePTM R package",
+    "section": "7.1 litReview()",
+    "text": "7.1 litReview()\nA quick literature review from PubMed\n\nlitReview(start = 2023, end = 2024, term = \"Tiziana Bonaldi[au]\")\n#&gt; [[1]]\n#&gt; # A tibble: 21 × 3\n#&gt;     year id       title                                                         \n#&gt;    &lt;int&gt; &lt;chr&gt;    &lt;chr&gt;                                                         \n#&gt;  1  2023 38124114 A comprehensive characterisation of phaeochromocytoma and par…\n#&gt;  2  2023 38102575 Multi-omics integrative modelling for stereotactic body radio…\n#&gt;  3  2023 38028201 Unveiling the role of PUS7-mediated pseudouridylation in host…\n#&gt;  4  2023 38019906 GTF2I dosage regulates neuronal differentiation and social be…\n#&gt;  5  2023 37727062 Proteomics contributions to epigenetic drug discovery.        \n#&gt;  6  2023 37665465 Mass Spectrometry-Based Analysis of Histone Posttranslational…\n#&gt;  7  2023 37294917 Lipid nanoparticles allow efficient and harmless ex vivo gene…\n#&gt;  8  2023 37146898 Detection and quantification of the histone code in the funga…\n#&gt;  9  2023 36810679 Methylation of CENP-A/Cse4 on arginine 143 and lysine 131 reg…\n#&gt; 10  2023 36697763 A truncated and catalytically inactive isoform of KDM5B histo…\n#&gt; # ℹ 11 more rows\n#&gt; \n#&gt; [[2]]\n#&gt; \n#&gt; 2023 2024 \n#&gt;   14    7"
+  },
+  {
+    "objectID": "histonePTM.html#ptm_uniprot",
+    "href": "histonePTM.html#ptm_uniprot",
+    "title": "histonePTM R package",
+    "section": "7.2 ptm_Uniprot()",
+    "text": "7.2 ptm_Uniprot()\nIt gets PTMs identified by proteomics from Uniprot\n\naccession &lt;- 'P42858' #HTT protein\n\ndf &lt;- ptm_Uniprot(Uniprot_accession = accession)\n\ncolumns_to_show &lt;- c('name', 'type','position', 'peptide', 'PEP', 'sources')\n\ndf |&gt; dplyr::select(all_of(columns_to_show))\n#&gt; # A tibble: 24 × 6\n#&gt;    name            type           position peptide                 PEP   sources\n#&gt;    &lt;chr&gt;           &lt;chr&gt;             &lt;int&gt; &lt;chr&gt;                   &lt;chr&gt; &lt;chr&gt;  \n#&gt;  1 Phosphorylation PROTEOMICS_PTM        4 HSLSSTK                 4.59… PRIDE  \n#&gt;  2 Phosphorylation PROTEOMICS_PTM       15 DEISGELAASSGVSTPGSAGHD… 1.41… PRIDE  \n#&gt;  3 Phosphorylation PROTEOMICS_PTM        3 AISEEEEEVDPNTQNPK       8.97… PRIDE  \n#&gt;  4 Phosphorylation PROTEOMICS_PTM       12 NMSHCRQPSDSSVDK         0.00… PRIDE  \n#&gt;  5 Phosphorylation PROTEOMICS_PTM        1 SRSGSIVELIAGGGSSCSPVLS… 1.32… PRIDE  \n#&gt;  6 Phosphorylation PROTEOMICS_PTM       26 TPPPELLQTLTAVGGIGQLTAA… 1.39… PRIDE  \n#&gt;  7 Phosphorylation PROTEOMICS_PTM        9 EKEPGEQASVPLSPKK        2.97… PRIDE  \n#&gt;  8 Phosphorylation PROTEOMICS_PTM        4 EKVSPGRTSDPNPAAPDSESVI… 1.98… PRIDE  \n#&gt;  9 Phosphorylation PROTEOMICS_PTM        3 LLSPQMSGEEEDSDLAAK      1.60… PRIDE  \n#&gt; 10 Phosphorylation PROTEOMICS_PTM        7 LLSPQMSGEEEDSDLAAK      1.60… PRIDE  \n#&gt; # ℹ 14 more rows"
+  },
+  {
+    "objectID": "about.html#teaching-experience",
+    "href": "about.html#teaching-experience",
+    "title": "My C.V.",
+    "section": "Teaching Experience",
+    "text": "Teaching Experience\nMath and Biology Teacher [2015 - 2019] | Accra Community School - Ghana"
+  },
+  {
+    "objectID": "about.html#education",
+    "href": "about.html#education",
+    "title": "My C.V.",
+    "section": "Education",
+    "text": "Education\n\nPhD in Chemical Biology [2021 - currently[ | University of Grenoble Alpes\n\nEDyP Lab - CEA Grenoble\nProject: I use mass spectrometry (MS) technique to analyze histone post-translational modifications (hPTMs) in the context of Huntington’s Disease.\n\nMaster 2 in NanoBiology [2021] | University of Grenoble Alpes\n\n6-month internship: Impact of detergents on sequencing membrane proteins using MALDI-MS\nInstitut de Biologie Structurale (IBS) - Grenoble/France\n\nMaster 2 in Systems and Synthetic Biology [2020] | University of Paris Saclay\n\n6-month internship: Ultradeep Sequence-Function Mapping of Prokaryotic Promoter Libraries\nDepartment of Biosystems Science and Engineering (D-BSSE) - ETH - Basel/Switzerland\n\nMaster 1 Animal Biology [2014] | Lebanese Univeristy\nBS in Life & Earth Sciences [2013] | University of Paris Saclay"
+  },
+  {
+    "objectID": "about.html#computational-skills",
+    "href": "about.html#computational-skills",
+    "title": "My C.V.",
+    "section": "Computational Skills",
+    "text": "Computational Skills\n\nProgramming languages: R, Python\nGraphics software: Inkscape\nWriting: \\(\\LaTeX\\)"
+  },
+  {
+    "objectID": "about.html#languages",
+    "href": "about.html#languages",
+    "title": "My C.V.",
+    "section": "Languages",
+    "text": "Languages\n\nEnglish (Fluent)\nFrench (Intermediate)\nArabic (Native)\n\nThanks for dropping by! Find can find me also on:\n\n\n  \n\n\nLinkedIn\n\n\n  \n\n\nTwitter\n\n\n        \n\n\norcid"
+  },
+  {
+    "objectID": "index.html#what-am-i-currently-doing",
+    "href": "index.html#what-am-i-currently-doing",
+    "title": "Hassan M. Hijazi",
+    "section": "What am I currently doing?",
+    "text": "What am I currently doing?\nI am a PhD student at EDyP lab (CEA - Grenoble) since 10/2021.\nI use Mass spectrometry technique to study histone post-translational modificaitons (hPTMs) in the context of Huntington’s Disease (HD).\nI am writing my first author paper about some bullet points to consider when validating histone MS/MS PTMs. This will help scientists working on hPTMs avoid reporting false positive identifications as there is no way to control for the false discovery rate of modified peptides akin to the target-decoy strategy used standardly in proteomics. PTM A 2nd article will be about the characterization and utility of a derivatizating agent used to probe hPTMs.\nBeside, I use R and Python programming languages to analyze my data and visualize the results. I wrapped many functions that I used during my project into an R package (still under development), which you can take a look into this incomplete vignettes that I prepared."
   }
 ]
