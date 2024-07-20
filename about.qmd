@@ -1,5 +1,65 @@
 ---
-title: "About"
+title: "My C.V."
 ---
 
-About this site
+```{r echo = FALSE, warning=FALSE}
+library(tinytex)
+suppressPackageStartupMessages(library(icons))
+
+```
+
+## Hi there!
+
+## Teaching Experience
+
+**Math and Biology Teacher** \[2015 - 2019\] \| Accra Community School - Ghana
+
+## Education
+
+-   **PhD in Chemical Biology** \[2021 - *currently*\[ \| University of Grenoble Alpes
+    -   EDyP Lab - CEA Grenoble
+    -   Project: I use mass spectrometry (MS) technique to analyze histone post-translational modifications (hPTMs) in the context of Huntington's Disease.
+-   **Master 2 in NanoBiology** \[2021\] \| University of Grenoble Alpes
+    -   6-month internship: Impact of detergents on sequencing membrane proteins using MALDI-MS
+    -   Institut de Biologie Structurale (IBS) - Grenoble/France
+-   **Master 2 in Systems and Synthetic Biology** \[2020\] \| University of Paris Saclay
+    -   6-month internship: Ultradeep Sequence-Function Mapping of Prokaryotic Promoter Libraries
+    -   Department of Biosystems Science and Engineering (D-BSSE) - ETH - Basel/Switzerland
+-   **Master 1 Animal Biology** \[2014\] \| Lebanese Univeristy
+-   **BS in Life & Earth Sciences** \[2013\] \| University of Paris Saclay
+
+## Computational Skills
+
+-   Programming languages: R, Python
+
+-   Graphics software: Inkscape
+
+-   Writing: $\LaTeX$
+
+## Languages
+
+-   English (Fluent)
+
+-   French (Intermediate)
+
+-   Arabic (Native)
+
+Thanks for dropping by! Find can find me also on:
+
+```{r echo = FALSE}
+fontawesome(name = 'linkedin')
+```
+
+[LinkedIn](https://www.linkedin.com/in/hijaziihassan/)
+
+```{r echo = FALSE}
+fontawesome(name = 'twitter')
+```
+
+[Twitter](https://x.com/HassanHejazi)
+
+```{r echo = FALSE}
+academicons(name = 'orcid')
+```
+
+[orcid](https://orcid.org/my-orcid?orcid=0000-0001-6408-1768)

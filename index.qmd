@@ -30,7 +30,7 @@ suppressPackageStartupMessages(library(icons))
 
 Thank you for dropping by! My name is Hassan and here are a few words about me:
 
-## What I am currently doing?
+## What am I currently doing?
 
 I am a PhD student at [EDyP lab](https://www.edyp.fr/web/) (CEA - Grenoble) since 10/2021.
 

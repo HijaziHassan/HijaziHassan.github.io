@@ -1,6 +1,10 @@
 project:
   type: website
   output-dir: docs
+  resources: 
+    - "*.xlsx"
+    - "*.mgf"
+    - "*.png"
 
 website:
   title: "Hassan M. Hijazi"
@@ -8,6 +12,8 @@ website:
     right:
       - href: index.qmd
         text: Home
+      - href: about.qmd
+        text: My C.V.
       - href: histonePTM.Rmd
         text: My R package
 
