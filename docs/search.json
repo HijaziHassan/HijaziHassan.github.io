@@ -7,13 +7,6 @@
     "text": "Thank you for dropping by! My name is Hassan and here are a few words about me:"
   },
   {
-    "objectID": "about.html",
-    "href": "about.html",
-    "title": "Hassan Hijazi",
-    "section": "",
-    "text": "PhD Project (2021 - currently): Studying Perturbed Histone Acylations in Huntington’s Disease by Proteomics\n\nEDyP Lab - CEA Grenoble/France\n\n\n6-month internship (2021): Impact of detergents on sequencing membrane proteins using MALDI-MS\n\nInstitut de Biologie Structurale (IBS) - Grenoble/France\n\n\n6-month internship (2020): Ultradeep Sequence-Function Mapping of Prokaryotic Promoter Libraries\n\nDepartment of Biosystems Science and Engineering (D-BSSE) - ETH - Basel/Switzerland"
-  },
-  {
     "objectID": "index.html#hi-there",
     "href": "index.html#hi-there",
     "title": "Hassan M. Hijazi",
@@ -21,25 +14,74 @@
     "text": "Thank you for dropping by! My name is Hassan and here are a few words about me:"
   },
   {
-    "objectID": "index.html#what-i-am-currently-doing",
-    "href": "index.html#what-i-am-currently-doing",
+    "objectID": "index.html#what-am-i-currently-doing",
+    "href": "index.html#what-am-i-currently-doing",
     "title": "Hassan M. Hijazi",
-    "section": "What I am currently doing?",
-    "text": "What I am currently doing?\nI am a PhD student at EDyP lab (CEA - Grenoble) since 10/2021.\nI use Mass spectrometry technique to study histone post-translational modificaitons (hPTMs) in the context of Huntington’s Disease (HD).\nI am writing my first author paper about some bullet points to consider when validating histone MS/MS PTMs. This will help scientists working on hPTMs avoid reporting false positive identifications as there is no way to control for the false discovery rate of modified peptides akin to the target-decoy strategy used standardly in proteomics. PTM A 2nd article will be about the characterization and utility of a derivatizating agent used to probe hPTMs.\nBeside, I use R and Python programming languages to analyze my data and visualize the results. I wrapped many functions that I used during my project into an R package (still under development), which you can take a look into this incomplete vignettes that I prepared."
+    "section": "What am I currently doing?",
+    "text": "What am I currently doing?\nI am a PhD student at EDyP lab (CEA - Grenoble) since October 2021.\nI use mass spectrometry technique to study histone post-translational modifications (hPTMs) in the context of Huntington’s Disease (HD)."
   },
   {
-    "objectID": "index.html#from-where-i-come",
-    "href": "index.html#from-where-i-come",
+    "objectID": "index.html#open-to-work",
+    "href": "index.html#open-to-work",
     "title": "Hassan M. Hijazi",
-    "section": "From Where I come?",
-    "text": "From Where I come?\nI did two internships each lasted fro 6 months.\nThe first was related to synthetic biology at ETH in Switzerland (2020) and the other was into mass spectrometry at IBS-Grenoble (2021). In the latter, I used MALDI-MS to study the effect of some detergents on the ionization of intact proteins."
+    "section": "Open to Work …!",
+    "text": "Open to Work …!\nI am seeking a project where I can apply the knowledge and skills I’ve gained in proteomics and programming throughout my PhD journey.\nIdeally, this role would be at the intersection of wet and dry lab work, involving the acquisition, cleaning, and analysis of data. The final goal would be to test statistical approaches, feed data into machine learning models, or develop tools and pipelines to streamline analysis, ultimately gaining insights into the intricate underlying biology."
   },
   {
-    "objectID": "index.html#next-steps",
-    "href": "index.html#next-steps",
-    "title": "Hassan M. Hijazi",
-    "section": "Next steps …",
-    "text": "Next steps …\nI am searching for a project where I can invest the knowledge and skills that I have acquired in proteomics and programming through my PhD journey.\nThis position ideally lies at the interface between wet and dry lab in which data are acquired, cleaned and scrutinized, to test a statistical approach or to feedback into a machine learning model."
+    "objectID": "about.html",
+    "href": "about.html",
+    "title": "Hassan Hijazi",
+    "section": "",
+    "text": "PhD Project (2021 - currently): Studying Perturbed Histone Acylations in Huntington’s Disease by Proteomics\n\nEDyP Lab - CEA Grenoble/France\n\n\n6-month internship (2021): Impact of detergents on sequencing membrane proteins using MALDI-MS\n\nInstitut de Biologie Structurale (IBS) - Grenoble/France\n\n\n6-month internship (2020): Ultradeep Sequence-Function Mapping of Prokaryotic Promoter Libraries\n\nDepartment of Biosystems Science and Engineering (D-BSSE) - ETH - Basel/Switzerland"
+  },
+  {
+    "objectID": "about.html#professional-experience",
+    "href": "about.html#professional-experience",
+    "title": "Hassan Hijazi",
+    "section": "",
+    "text": "PhD Project (2021 - currently): Studying Perturbed Histone Acylations in Huntington’s Disease by Proteomics\n\nEDyP Lab - CEA Grenoble/France\n\n\n6-month internship (2021): Impact of detergents on sequencing membrane proteins using MALDI-MS\n\nInstitut de Biologie Structurale (IBS) - Grenoble/France\n\n\n6-month internship (2020): Ultradeep Sequence-Function Mapping of Prokaryotic Promoter Libraries\n\nDepartment of Biosystems Science and Engineering (D-BSSE) - ETH - Basel/Switzerland"
+  },
+  {
+    "objectID": "about.html#publications",
+    "href": "about.html#publications",
+    "title": "Hassan Hijazi",
+    "section": "Publications",
+    "text": "Publications\nSequencing intact membrane proteins using MALDI mass spectrometry\nEdison Zhamungui Sánchez; Hassan Hijazi; Jana Haidar; Enrica Mecarelli; Elda Bauda; Isabelle Petit-Härtlein; Jean-Marie Teulon; Jean-Luc Pellequer; Elisabetta Boeri Erba\nFront. Anal. Sci., 13 July 2023\nDOI\nToehold switch based biosensors for sensing the highly trafficked rosewood Dalbergia maritima\nPaul Soudier, Daniel Rodriguez Pinzon, Tristan Reif-Trauttmansdorff, Hassan Hijazi, Maëva Cherrière, Cátia Goncalves Pereira, Doriane Blaise, Maxime Pispisa, Angelyne Saint-Julien, William Hamlet, Melissa Nguevo, Eva Gomes, Sophia Belkhelfa, Anna Niarakisc, Manish Kushwaha, Ioana Grigoras\nSynthetic and Systems Biotechnology 30 March 2022\nDOI"
+  },
+  {
+    "objectID": "about.html#education",
+    "href": "about.html#education",
+    "title": "Hassan Hijazi",
+    "section": "Education",
+    "text": "Education\n\nPhD in Chemical Biology [2021 - currently[ | University of Grenoble Alpes\nMaster 2 in NanoBiology [2021] | University of Grenoble Alpes\nMaster 2 in Systems and Synthetic Biology [2020] | University of Paris Saclay\nMaster 1 Animal Biology [2014] | Lebanese Univeristy\nBS in Life & Earth Sciences [2013] | University of Paris Saclay"
+  },
+  {
+    "objectID": "about.html#computational-skills",
+    "href": "about.html#computational-skills",
+    "title": "Hassan Hijazi",
+    "section": "Computational Skills",
+    "text": "Computational Skills\n\nProgramming languages:  , \nGraphics software: Inkscape\nWriting: \\(\\LaTeX\\)"
+  },
+  {
+    "objectID": "about.html#languages",
+    "href": "about.html#languages",
+    "title": "Hassan Hijazi",
+    "section": "Languages",
+    "text": "Languages\n\nEnglish (Fluent)\nFrench (Intermediate)\nArabic (Native)"
+  },
+  {
+    "objectID": "about.html#teaching-experience",
+    "href": "about.html#teaching-experience",
+    "title": "Hassan Hijazi",
+    "section": "Teaching Experience",
+    "text": "Teaching Experience\nMath and Biology Teacher [2015 - 2019] | Accra Community School - Ghana"
+  },
+  {
+    "objectID": "about.html#lets-connect",
+    "href": "about.html#lets-connect",
+    "title": "Hassan Hijazi",
+    "section": "Let’s Connect!",
+    "text": "Let’s Connect!\nThanks for dropping by! Find can find me also on:\n LinkedIn  orcid  Twitter  GitHub"
   },
   {
     "objectID": "histonePTM.html",
@@ -159,75 +201,5 @@
     "title": "histonePTM R package",
     "section": "7.2 ptm_Uniprot()",
     "text": "7.2 ptm_Uniprot()\nIt gets PTMs identified by proteomics from Uniprot\n\naccession &lt;- 'P42858' #HTT protein\n\ndf &lt;- ptm_Uniprot(Uniprot_accession = accession)\n\ncolumns_to_show &lt;- c('name', 'type','position', 'peptide', 'PEP', 'sources')\n\ndf |&gt; dplyr::select(all_of(columns_to_show))\n#&gt; # A tibble: 24 × 6\n#&gt;    name            type           position peptide                 PEP   sources\n#&gt;    &lt;chr&gt;           &lt;chr&gt;             &lt;int&gt; &lt;chr&gt;                   &lt;chr&gt; &lt;chr&gt;  \n#&gt;  1 Phosphorylation PROTEOMICS_PTM        4 HSLSSTK                 4.59… PRIDE  \n#&gt;  2 Phosphorylation PROTEOMICS_PTM       15 DEISGELAASSGVSTPGSAGHD… 1.41… PRIDE  \n#&gt;  3 Phosphorylation PROTEOMICS_PTM        3 AISEEEEEVDPNTQNPK       8.97… PRIDE  \n#&gt;  4 Phosphorylation PROTEOMICS_PTM       12 NMSHCRQPSDSSVDK         0.00… PRIDE  \n#&gt;  5 Phosphorylation PROTEOMICS_PTM        1 SRSGSIVELIAGGGSSCSPVLS… 1.32… PRIDE  \n#&gt;  6 Phosphorylation PROTEOMICS_PTM       26 TPPPELLQTLTAVGGIGQLTAA… 1.39… PRIDE  \n#&gt;  7 Phosphorylation PROTEOMICS_PTM        9 EKEPGEQASVPLSPKK        2.97… PRIDE  \n#&gt;  8 Phosphorylation PROTEOMICS_PTM        4 EKVSPGRTSDPNPAAPDSESVI… 1.98… PRIDE  \n#&gt;  9 Phosphorylation PROTEOMICS_PTM        3 LLSPQMSGEEEDSDLAAK      1.60… PRIDE  \n#&gt; 10 Phosphorylation PROTEOMICS_PTM        7 LLSPQMSGEEEDSDLAAK      1.60… PRIDE  \n#&gt; # ℹ 14 more rows"
-  },
-  {
-    "objectID": "about.html#teaching-experience",
-    "href": "about.html#teaching-experience",
-    "title": "Hassan Hijazi",
-    "section": "Teaching Experience",
-    "text": "Teaching Experience\nMath and Biology Teacher [2015 - 2019] | Accra Community School - Ghana"
-  },
-  {
-    "objectID": "about.html#education",
-    "href": "about.html#education",
-    "title": "Hassan Hijazi",
-    "section": "Education",
-    "text": "Education\n\nPhD in Chemical Biology [2021 - currently[ | University of Grenoble Alpes\nMaster 2 in NanoBiology [2021] | University of Grenoble Alpes\nMaster 2 in Systems and Synthetic Biology [2020] | University of Paris Saclay\nMaster 1 Animal Biology [2014] | Lebanese Univeristy\nBS in Life & Earth Sciences [2013] | University of Paris Saclay"
-  },
-  {
-    "objectID": "about.html#computational-skills",
-    "href": "about.html#computational-skills",
-    "title": "Hassan Hijazi",
-    "section": "Computational Skills",
-    "text": "Computational Skills\n\nProgramming languages:  , \nGraphics software: Inkscape\nWriting: \\(\\LaTeX\\)"
-  },
-  {
-    "objectID": "about.html#languages",
-    "href": "about.html#languages",
-    "title": "Hassan Hijazi",
-    "section": "Languages",
-    "text": "Languages\n\nEnglish (Fluent)\nFrench (Intermediate)\nArabic (Native)"
-  },
-  {
-    "objectID": "index.html#what-am-i-currently-doing",
-    "href": "index.html#what-am-i-currently-doing",
-    "title": "Hassan M. Hijazi",
-    "section": "What am I currently doing?",
-    "text": "What am I currently doing?\nI am a PhD student at EDyP lab (CEA - Grenoble) since October 2021.\nI use mass spectrometry technique to study histone post-translational modifications (hPTMs) in the context of Huntington’s Disease (HD)."
-  },
-  {
-    "objectID": "index.html#pre-phd-experience",
-    "href": "index.html#pre-phd-experience",
-    "title": "Hassan M. Hijazi",
-    "section": "Pre-PhD Experience",
-    "text": "Pre-PhD Experience\nI did two internships each lasted fro 6 months.\nThe first was related to synthetic biology at ETH in Switzerland (2020) and the other was into mass spectrometry at IBS-Grenoble (2021). In the latter, I used MALDI-MS to study the effect of some detergents on the ionization of intact proteins."
-  },
-  {
-    "objectID": "index.html#open-to-work",
-    "href": "index.html#open-to-work",
-    "title": "Hassan M. Hijazi",
-    "section": "Open to Work …!",
-    "text": "Open to Work …!\nI am seeking a project where I can apply the knowledge and skills I’ve gained in proteomics and programming throughout my PhD journey.\nIdeally, this role would be at the intersection of wet and dry lab work, involving the acquisition, cleaning, and analysis of data. The final goal would be to test statistical approaches, feed data into machine learning models, or develop tools and pipelines to streamline analysis, ultimately gaining insights into the intricate underlying biology."
-  },
-  {
-    "objectID": "about.html#lets-connect",
-    "href": "about.html#lets-connect",
-    "title": "Hassan Hijazi",
-    "section": "Let’s Connect!",
-    "text": "Let’s Connect!\nThanks for dropping by! Find can find me also on:\n LinkedIn  orcid  Twitter  GitHub"
-  },
-  {
-    "objectID": "about.html#professional-experience",
-    "href": "about.html#professional-experience",
-    "title": "Hassan Hijazi",
-    "section": "",
-    "text": "PhD Project (2021 - currently): Studying Perturbed Histone Acylations in Huntington’s Disease by Proteomics\n\nEDyP Lab - CEA Grenoble/France\n\n\n6-month internship (2021): Impact of detergents on sequencing membrane proteins using MALDI-MS\n\nInstitut de Biologie Structurale (IBS) - Grenoble/France\n\n\n6-month internship (2020): Ultradeep Sequence-Function Mapping of Prokaryotic Promoter Libraries\n\nDepartment of Biosystems Science and Engineering (D-BSSE) - ETH - Basel/Switzerland"
-  },
-  {
-    "objectID": "about.html#publications",
-    "href": "about.html#publications",
-    "title": "Hassan Hijazi",
-    "section": "Publications",
-    "text": "Publications\nSequencing intact membrane proteins using MALDI mass spectrometry\nEdison Zhamungui Sánchez; Hassan Hijazi; Jana Haidar; Enrica Mecarelli; Elda Bauda; Isabelle Petit-Härtlein; Jean-Marie Teulon; Jean-Luc Pellequer; Elisabetta Boeri Erba\nFront. Anal. Sci., 13 July 2023\nDOI\nToehold switch based biosensors for sensing the highly trafficked rosewood Dalbergia maritima\nPaul Soudier, Daniel Rodriguez Pinzon, Tristan Reif-Trauttmansdorff, Hassan Hijazi, Maëva Cherrière, Cátia Goncalves Pereira, Doriane Blaise, Maxime Pispisa, Angelyne Saint-Julien, William Hamlet, Melissa Nguevo, Eva Gomes, Sophia Belkhelfa, Anna Niarakisc, Manish Kushwaha, Ioana Grigoras\nSynthetic and Systems Biotechnology 30 March 2022\nDOI"
   }
 ]
