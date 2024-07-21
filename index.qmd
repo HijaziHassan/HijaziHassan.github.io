@@ -9,7 +9,7 @@ toc: false
 about:
   template: trestles
   image-shape: round
-  image-width: 20em
+  image-width: 15em
   links:
     - icon: linkedin
       text: LinkedIn
