@@ -18,7 +18,7 @@
     "href": "index.html#what-am-i-currently-doing",
     "title": "Hassan M. Hijazi",
     "section": "What am I currently doing?",
-    "text": "What am I currently doing?\nI am a PhD student at EDyP lab (CEA - Grenoble) since October 2021.\nI use mass spectrometry technique to study histone post-translational modifications (hPTMs) in the context of Huntington’s Disease (HD)."
+    "text": "What am I currently doing?\nI am a PhD student at EDyP lab (CEA - Grenoble) since October 2021 (expected to finish by March 2025).\nI use mass spectrometry technique to study histone post-translational modifications (hPTMs) in the context of Huntington’s Disease (HD)."
   },
   {
     "objectID": "index.html#open-to-work",
@@ -53,7 +53,7 @@
     "href": "about.html#education",
     "title": "Hassan Hijazi",
     "section": "Education",
-    "text": "Education\n\nPhD in Chemical Biology [2021 - currently[ | University of Grenoble Alpes\nMaster 2 in NanoBiology [2021] | University of Grenoble Alpes\nMaster 2 in Systems and Synthetic Biology [2020] | University of Paris Saclay\nMaster 1 Animal Biology [2014] | Lebanese Univeristy\nBS in Life & Earth Sciences [2013] | University of Paris Saclay"
+    "text": "Education\n\nPhD in Chemical Biology [2021 - currently[ | University of Grenoble Alpes\nMaster 2 in NanoBiology [2021] | University of Grenoble Alpes\nMaster 2 in Systems and Synthetic Biology [2020] | University of Paris Saclay\nMaster 1 in Animal Biology [2014] | Lebanese Univeristy\nBS in Life & Earth Sciences [2013] | Lebanese Univeristy"
   },
   {
     "objectID": "about.html#computational-skills",
@@ -74,7 +74,7 @@
     "href": "about.html#teaching-experience",
     "title": "Hassan Hijazi",
     "section": "Teaching Experience",
-    "text": "Teaching Experience\nMath and Biology Teacher [2015 - 2019] | Accra Community School - Ghana"
+    "text": "Teaching Experience\n\nMath and Biology Teacher [2015 - 2019] | Accra Community School - Ghana\nIntroduction to Proteomics lecture as part of ‘High Through Biology’ course at University of Grenoble Alpes | Master 2"
   },
   {
     "objectID": "about.html#lets-connect",
@@ -201,5 +201,19 @@
     "title": "histonePTM R package",
     "section": "7.2 ptm_Uniprot()",
     "text": "7.2 ptm_Uniprot()\nIt gets PTMs identified by proteomics from Uniprot\n\naccession &lt;- 'P42858' #HTT protein\n\ndf &lt;- ptm_Uniprot(Uniprot_accession = accession)\n\ncolumns_to_show &lt;- c('name', 'type','position', 'peptide', 'PEP', 'sources')\n\ndf |&gt; dplyr::select(all_of(columns_to_show))\n#&gt; # A tibble: 24 × 6\n#&gt;    name            type           position peptide                 PEP   sources\n#&gt;    &lt;chr&gt;           &lt;chr&gt;             &lt;int&gt; &lt;chr&gt;                   &lt;chr&gt; &lt;chr&gt;  \n#&gt;  1 Phosphorylation PROTEOMICS_PTM        4 HSLSSTK                 4.59… PRIDE  \n#&gt;  2 Phosphorylation PROTEOMICS_PTM       15 DEISGELAASSGVSTPGSAGHD… 1.41… PRIDE  \n#&gt;  3 Phosphorylation PROTEOMICS_PTM        3 AISEEEEEVDPNTQNPK       8.97… PRIDE  \n#&gt;  4 Phosphorylation PROTEOMICS_PTM       12 NMSHCRQPSDSSVDK         0.00… PRIDE  \n#&gt;  5 Phosphorylation PROTEOMICS_PTM        1 SRSGSIVELIAGGGSSCSPVLS… 1.32… PRIDE  \n#&gt;  6 Phosphorylation PROTEOMICS_PTM       26 TPPPELLQTLTAVGGIGQLTAA… 1.39… PRIDE  \n#&gt;  7 Phosphorylation PROTEOMICS_PTM        9 EKEPGEQASVPLSPKK        2.97… PRIDE  \n#&gt;  8 Phosphorylation PROTEOMICS_PTM        4 EKVSPGRTSDPNPAAPDSESVI… 1.98… PRIDE  \n#&gt;  9 Phosphorylation PROTEOMICS_PTM        3 LLSPQMSGEEEDSDLAAK      1.60… PRIDE  \n#&gt; 10 Phosphorylation PROTEOMICS_PTM        7 LLSPQMSGEEEDSDLAAK      1.60… PRIDE  \n#&gt; # ℹ 14 more rows"
+  },
+  {
+    "objectID": "about.html#conferences",
+    "href": "about.html#conferences",
+    "title": "Hassan Hijazi",
+    "section": "Conferences",
+    "text": "Conferences\n\nFrench Proteomics Society - Club-Jeunes (FPS-CJ)\n\nBourdeaux [Flash Talk]\n\n\nJoint Meeting of Spanish, French, and Portuguese Proteomics Societies\n\nProteoVilamoura - Portugal (2022) [Flash talk]\nProteoAix - France (2023)[Poster]\n\nSymposium “Signaling through Chromatin” - Grenoble (2023) [Poster]\n\nMass Spectrometry and Proteomic Analysis (SMAP) conference - Lille - France (2024) [Bioinformatics Workshop]\n\nHUPO - Germany (2024) [Abstract accepted]"
+  },
+  {
+    "objectID": "about.html#professional-activities",
+    "href": "about.html#professional-activities",
+    "title": "Hassan Hijazi",
+    "section": "Professional Activities",
+    "text": "Professional Activities\n\nA Current member of French Proteomics Society - Club Jeunes (FPS-CJ Bureau).\nA member of 2020 iGEM team of Paris Saclay - Evry (Golden Medal Winner)"
   }
 ]

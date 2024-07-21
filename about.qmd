@@ -22,7 +22,7 @@ suppressPackageStartupMessages(library(icons))
 
 ## Publications
 
-[Sequencing intact membrane proteins using MALDI mass spectrometry ]{style="font-weight: bold;"}
+[Sequencing intact membrane proteins using MALDI mass spectrometry]{style="font-weight: bold;"}
 
 [Edison Zhamungui Sánchez; **Hassan Hijazi**; Jana Haidar; Enrica Mecarelli; Elda Bauda; Isabelle Petit-Härtlein; Jean-Marie Teulon; Jean-Luc Pellequer; Elisabetta Boeri Erba]{style="font-size: 14px;"}
 
@@ -46,9 +46,9 @@ suppressPackageStartupMessages(library(icons))
 
 -   **Master 2 in Systems and Synthetic Biology** \[2020\] \| University of Paris Saclay
 
--   **Master 1 Animal Biology** \[2014\] \| Lebanese Univeristy
+-   **Master 1 in Animal Biology** \[2014\] \| Lebanese Univeristy
 
--   **BS in Life & Earth Sciences** \[2013\] \| University of Paris Saclay
+-   **BS in Life & Earth Sciences** \[2013\] \| Lebanese Univeristy
 
 ## Computational Skills
 
@@ -66,9 +66,34 @@ suppressPackageStartupMessages(library(icons))
 
 -   Arabic (Native)
 
+## Conferences
+
+-   French Proteomics Society - Club-Jeunes (FPS-CJ)
+
+    -   Bourdeaux \[Flash Talk\]\
+
+-   Joint Meeting of Spanish, French, and Portuguese Proteomics Societies
+
+    -   ProteoVilamoura - Portugal (2022) \[Flash talk\]
+    -   ProteoAix - France (2023)\[Poster\]
+
+-   Symposium "Signaling through Chromatin" - Grenoble (2023) \[Poster\]\
+
+-   Mass Spectrometry and Proteomic Analysis (SMAP) conference - Lille - France (2024) \[Bioinformatics Workshop\]\
+
+-   HUPO - Germany (2024) \[Abstract accepted\]\
+
+## Professional Activities
+
+-   A Current member of French Proteomics Society - Club Jeunes ([FPS-CJ Bureau](http://clubjeunesfps.free.fr/bureau.html)).
+
+-   A member of 2020 iGEM team of Paris Saclay - Evry ([Golden Medal Winner](https://2020.igem.org/Team:Evry_Paris-Saclay/Team))
+
 ## Teaching Experience
 
-**Math and Biology Teacher** \[2015 - 2019\] \| Accra Community School - Ghana
+-   **Math and Biology Teacher** \[2015 - 2019\] \| Accra Community School - Ghana
+
+-   **Introduction to Proteomics** lecture as part of 'High Through Biology' course at University of Grenoble Alpes \| Master 2
 
 ## Let's Connect!
 
