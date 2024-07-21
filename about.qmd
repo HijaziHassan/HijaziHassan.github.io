@@ -1,5 +1,8 @@
 ---
-title: "My C.V."
+title: "Hassan Hijazi"
+format:
+  html:
+    css: styles.css
 ---
 
 ```{r echo = FALSE, warning=FALSE}
@@ -8,29 +11,48 @@ suppressPackageStartupMessages(library(icons))
 
 ```
 
-## Hi there!
+## Professional Experience
 
-## Teaching Experience
+-   PhD Project (2021 - currently): Studying Perturbed Histone Acylations in Huntington's Disease by Proteomics
+    -   EDyP Lab - CEA Grenoble/France\
+-   6-month internship (2021): Impact of detergents on sequencing membrane proteins using MALDI-MS
+    -   Institut de Biologie Structurale (IBS) - Grenoble/France\
+-   6-month internship (2020): Ultradeep Sequence-Function Mapping of Prokaryotic Promoter Libraries
+    -   Department of Biosystems Science and Engineering (D-BSSE) - ETH - Basel/Switzerland
 
-**Math and Biology Teacher** \[2015 - 2019\] \| Accra Community School - Ghana
+## Publications
+
+[Sequencing intact membrane proteins using MALDI mass spectrometry ]{style="font-weight: bold;"}
+
+[Edison Zhamungui Sánchez; **Hassan Hijazi**; Jana Haidar; Enrica Mecarelli; Elda Bauda; Isabelle Petit-Härtlein; Jean-Marie Teulon; Jean-Luc Pellequer; Elisabetta Boeri Erba]{style="font-size: 14px;"}
+
+[Front. Anal. Sci., 13 July 2023]{style="font-weight: bold; font-size: 12px;"}
+
+[DOI](https://www.frontiersin.org/journals/analytical-science/articles/10.3389/frans.2023.1124741/full){.btn .btn-outline-primary .btn role="button" data-toggle="tooltip" title="Read the article online"}
+
+[Toehold switch based biosensors for sensing the highly trafficked rosewood *Dalbergia maritima*]{style="font-weight: bold;"}
+
+[Paul Soudier, Daniel Rodriguez Pinzon, Tristan Reif-Trauttmansdorff, **Hassan Hijazi**, Maëva Cherrière, Cátia Goncalves Pereira, Doriane Blaise, Maxime Pispisa, Angelyne Saint-Julien, William Hamlet, Melissa Nguevo, Eva Gomes, Sophia Belkhelfa, Anna Niarakisc, Manish Kushwaha, Ioana Grigoras]{style="font-size: 14px;"}
+
+[Synthetic and Systems Biotechnology 30 March 2022]{style="font-weight: bold; font-size: 12px;"}
+
+[DOI](https://www.sciencedirect.com/science/article/pii/S2405805X22000278?via%3Dihub){.btn .btn-outline-primary .btn role="button" data-toggle="tooltip" title="Read the article online"}
 
 ## Education
 
 -   **PhD in Chemical Biology** \[2021 - *currently*\[ \| University of Grenoble Alpes
-    -   EDyP Lab - CEA Grenoble
-    -   Project: I use mass spectrometry (MS) technique to analyze histone post-translational modifications (hPTMs) in the context of Huntington's Disease.
+
 -   **Master 2 in NanoBiology** \[2021\] \| University of Grenoble Alpes
-    -   6-month internship: Impact of detergents on sequencing membrane proteins using MALDI-MS
-    -   Institut de Biologie Structurale (IBS) - Grenoble/France
+
 -   **Master 2 in Systems and Synthetic Biology** \[2020\] \| University of Paris Saclay
-    -   6-month internship: Ultradeep Sequence-Function Mapping of Prokaryotic Promoter Libraries
-    -   Department of Biosystems Science and Engineering (D-BSSE) - ETH - Basel/Switzerland
+
 -   **Master 1 Animal Biology** \[2014\] \| Lebanese Univeristy
+
 -   **BS in Life & Earth Sciences** \[2013\] \| University of Paris Saclay
 
 ## Computational Skills
 
--   Programming languages: R, Python
+-   Programming languages: {{< fa brands r-project >}} , {{< fa brands python >}}
 
 -   Graphics software: Inkscape
 
@@ -44,22 +66,12 @@ suppressPackageStartupMessages(library(icons))
 
 -   Arabic (Native)
 
+## Teaching Experience
+
+**Math and Biology Teacher** \[2015 - 2019\] \| Accra Community School - Ghana
+
+## Let's Connect!
+
 Thanks for dropping by! Find can find me also on:
 
-```{r echo = FALSE}
-fontawesome(name = 'linkedin')
-```
-
-[LinkedIn](https://www.linkedin.com/in/hijaziihassan/)
-
-```{r echo = FALSE}
-fontawesome(name = 'twitter')
-```
-
-[Twitter](https://x.com/HassanHejazi)
-
-```{r echo = FALSE}
-academicons(name = 'orcid')
-```
-
-[orcid](https://orcid.org/my-orcid?orcid=0000-0001-6408-1768)
+{{< fa brands linkedin >}} [LinkedIn](https://www.linkedin.com/in/hijaziihassan/) {{< fa brands orcid >}} [orcid](https://orcid.org/my-orcid?orcid=0000-0001-6408-1768) {{< fa brands x-twitter >}} [Twitter](https://x.com/HassanHejazi) {{< fa brands github >}} [GitHub](https://github.com/HijaziHassan)

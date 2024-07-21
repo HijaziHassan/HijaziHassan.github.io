@@ -13,7 +13,7 @@ website:
       - href: index.qmd
         text: Home
       - href: about.qmd
-        text: My C.V.
+        text: CV
       - href: histonePTM.Rmd
         text: My R package
 
