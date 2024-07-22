@@ -18,7 +18,7 @@
     "href": "index.html#what-am-i-currently-doing",
     "title": "Hassan M. Hijazi",
     "section": "What am I currently doing?",
-    "text": "What am I currently doing?\nI am a PhD student at EDyP lab (CEA - Grenoble) since October 2021 (expected to finish by March 2025).\nI use mass spectrometry technique to study histone post-translational modifications (hPTMs) in the context of Huntington’s Disease (HD)."
+    "text": "What am I currently doing?\nI am a PhD student at EDyP lab (CEA - Grenoble) since October 2021 (expected to finish by end of March 2025).\nI use mass spectrometry technique to study histone post-translational modifications (hPTMs) in the context of Huntington’s Disease (HD)."
   },
   {
     "objectID": "index.html#open-to-work",
@@ -60,7 +60,7 @@
     "href": "about.html#computational-skills",
     "title": "Hassan Hijazi",
     "section": "Computational Skills",
-    "text": "Computational Skills\n\nProgramming languages:  , \nGraphics software: Inkscape\nWriting: \\(\\LaTeX\\)"
+    "text": "Computational Skills\n\nProgramming languages: R and Python\n\nI developed ‘HistonePTM’ an R package to facilitate histone PTM analysis (not made public yet but have a glance on the vignette.\n\nGraphics software: Inkscape\nWriting: \\(\\LaTeX\\)"
   },
   {
     "objectID": "about.html#languages",
@@ -74,14 +74,14 @@
     "href": "about.html#teaching-experience",
     "title": "Hassan Hijazi",
     "section": "Teaching Experience",
-    "text": "Teaching Experience\n\nMath and Biology Teacher [2015 - 2019] | Accra Community School - Ghana\nIntroduction to Proteomics lecture as part of ‘High Through Biology’ course at University of Grenoble Alpes | Master 2"
+    "text": "Teaching Experience\n\nMath and Biology Teacher [2015 - 2019] | Accra Community School - Ghana\nIntroduction to Proteomics lecture for master 2 students as part of ‘High Through Biology’ course [to be delivered in October 2024] | University of Grenoble Alpes"
   },
   {
     "objectID": "about.html#lets-connect",
     "href": "about.html#lets-connect",
     "title": "Hassan Hijazi",
     "section": "Let’s Connect!",
-    "text": "Let’s Connect!\nThanks for dropping by! Find can find me also on:\n LinkedIn  orcid  Twitter  GitHub"
+    "text": "Let’s Connect!\nThanks for dropping by! Find me also on:\n LinkedIn  orcid  Twitter  GitHub"
   },
   {
     "objectID": "histonePTM.html",
@@ -207,7 +207,7 @@
     "href": "about.html#conferences",
     "title": "Hassan Hijazi",
     "section": "Conferences",
-    "text": "Conferences\n\nFrench Proteomics Society - Club-Jeunes (FPS-CJ)\n\nBourdeaux [Flash Talk]\n\n\nJoint Meeting of Spanish, French, and Portuguese Proteomics Societies\n\nProteoVilamoura - Portugal (2022) [Flash talk]\nProteoAix - France (2023)[Poster]\n\nSymposium “Signaling through Chromatin” - Grenoble (2023) [Poster]\n\nMass Spectrometry and Proteomic Analysis (SMAP) conference - Lille - France (2024) [Bioinformatics Workshop]\n\nHUPO - Germany (2024) [Abstract accepted]"
+    "text": "Conferences\n\nFrench Proteomics Society - Club-Jeunes (FPS-CJ)\n\nBourdeaux [Flash Talk]\n\n\nJoint Meeting of Spanish, French, and Portuguese Proteomics Societies\n\nProteoVilamoura - Portugal (2022) [Flash talk]\nProteoAix - France (2023)[Poster]\n\nSymposium “Signaling through Chromatin” - Grenoble (2023) [Poster]\n\nMass Spectrometry and Proteomic Analysis (SMAP) conference - Lille - France (upcoming in 09/2024) [Participation in a bioinformatics workshop]\n\nHUPO - Germany (2024) [Abstract accepted]"
   },
   {
     "objectID": "about.html#professional-activities",

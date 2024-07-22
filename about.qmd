@@ -52,7 +52,9 @@ suppressPackageStartupMessages(library(icons))
 
 ## Computational Skills
 
--   Programming languages: {{< fa brands r-project >}} , {{< fa brands python >}}
+-   Programming languages: R{{< fa brands r-project >}} and Python{{< fa brands python >}}
+
+    -   I developed 'HistonePTM' an R package to facilitate histone PTM analysis (not made public yet but have a glance on the [vignette](https://hijazihassan.github.io/histonePTM.html).
 
 -   Graphics software: Inkscape
 
@@ -79,7 +81,7 @@ suppressPackageStartupMessages(library(icons))
 
 -   Symposium "Signaling through Chromatin" - Grenoble (2023) \[Poster\]\
 
--   Mass Spectrometry and Proteomic Analysis (SMAP) conference - Lille - France (2024) \[Bioinformatics Workshop\]\
+-   Mass Spectrometry and Proteomic Analysis (SMAP) conference - Lille - France (upcoming in 09/2024) \[Participation in a bioinformatics workshop\]\
 
 -   HUPO - Germany (2024) \[Abstract accepted\]\
 
@@ -93,10 +95,10 @@ suppressPackageStartupMessages(library(icons))
 
 -   **Math and Biology Teacher** \[2015 - 2019\] \| Accra Community School - Ghana
 
--   **Introduction to Proteomics** lecture as part of 'High Through Biology' course at University of Grenoble Alpes \| Master 2
+-   **Introduction to Proteomics** lecture for master 2 students as part of 'High Through Biology' course \[to be delivered in October 2024\] \| University of Grenoble Alpes
 
 ## Let's Connect!
 
-Thanks for dropping by! Find can find me also on:
+Thanks for dropping by! Find me also on:
 
 {{< fa brands linkedin >}} [LinkedIn](https://www.linkedin.com/in/hijaziihassan/) {{< fa brands orcid >}} [orcid](https://orcid.org/my-orcid?orcid=0000-0001-6408-1768) {{< fa brands x-twitter >}} [Twitter](https://x.com/HassanHejazi) {{< fa brands github >}} [GitHub](https://github.com/HijaziHassan)
