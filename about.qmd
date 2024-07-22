@@ -54,7 +54,7 @@ suppressPackageStartupMessages(library(icons))
 
 -   Programming languages: R{{< fa brands r-project >}} and Python{{< fa brands python >}}
 
-    -   I developed 'HistonePTM' an R package to facilitate histone PTM analysis (not made public yet but have a glance on the [vignette](https://hijazihassan.github.io/histonePTM.html).
+    -   I have developed **'HistonePTM'**, an R package to facilitate histone PTM analysis (not made public yet but have a glance at the [vignette](https://hijazihassan.github.io/histonePTM.html)).
 
 -   Graphics software: Inkscape
 
