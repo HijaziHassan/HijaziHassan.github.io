@@ -17,8 +17,7 @@ about:
     - icon: github
       text: GitHub
       href: https://github.com/HijaziHassan
-    - icon: orcid
-      text: "{{< ai orcid >}} ORCiD"
+    - text: "{{< ai orcid >}} ORCiD"
       href: https://orcid.org/0000-0001-6408-1768
     - icon: envelope
       text: Email
