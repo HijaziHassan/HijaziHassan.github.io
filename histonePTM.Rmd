@@ -1,0 +1,376 @@
+---
+title: "histonePTM R package"
+output: rmarkdown::html_vignette
+editor_options: 
+  chunk_output_type: inline
+vignette: >
+  %\VignetteIndexEntry{histonePTM}
+  %\VignetteEncoding{UTF-8}
+  %\VignetteEngine{knitr::rmarkdown}
+---
+
+```{r, include = FALSE}
+knitr::opts_chunk$set(
+  collapse = TRUE,
+  comment = "#>"
+)
+
+```
+
+```{r setup, message= FALSE, warning=FALSE}
+library(histonePTM)
+library(dplyr)
+library(readxl)
+
+
+```
+
+**A collection of functions to make your life easier.**
+
+# 1. PTMs
+
+Rename PTM strings from `Proline` or `Skyline` to have a shorthanded representation.
+
+### 1.1 `ptm_beautify()`
+
+#### Proline
+
+```{r beautify Proline PTM}
+
+#PTM from Proline export, from 'modifications' column of sheet 'Best PSM from protein sets'.
+PTM_Proline <- 'Propionyl (Any N-term); Propionyl (K1); Butyryl (K10); Butyryl (K11)'
+
+ptm_beautify(PTM_Proline, lookup = histptm_lookup, software = 'Proline', residue = 'keep')
+
+ 
+ptm_beautify(PTM_Proline, lookup = histptm_lookup, software = 'Proline', residue = 'remove')
+
+
+
+```
+
+### Skyline
+
+Skyline PTMs are enclosed between square brackets (e.g. [+28.0313]) and sometimes they are rounded (e.g [+28]). We don't support rounded numbers since some PTMs like [Ac] and [3Me] are rounded to the same number: +42. Use instead: 'Peptide Modified Sequence Monoisotopic Masses' column. Modified peptides in the 'isolation list' output file ('Comment' column) from Skyline always contains monoisotopic masses of PTMs as well.
+
+```{r beautify Skyline PTM}
+PTM_Skyline <- "K[+124.05243]SVPSTGGVK[+56.026215]K[+56.026215]PHR"
+ 
+
+ptm_beautify(PTM_Skyline, lookup = shorthistptm_mass, software = 'Skyline', residue = 'keep')
+
+ptm_beautify(PTM_Skyline, lookup = shorthistptm_mass, software = 'Skyline', residue = 'remove')
+
+
+
+```
+
+### 1.2 `misc_clearLabeling`
+
+Remove the chemical labelling like `propionyl` or `TMA` which are not biologically relevant.
+
+```{r Clear chemical labeling}
+misc_clearLabeling("prNt-cr-pr-pr")
+```
+
+### 1.3 `ptm_toProForma()`
+
+Convert PTM string to <a href="https://www.psidev.info/proforma">ProForma</a> ProForma (Proteoform and Peptidoform Notation)
+
+```{r Convert PTMed peptide to ProForma}
+histonePTM::ptm_toProForma(seq = "KSAPATGGVKKPHR",
+                mod = "Propionyl (Any N-term); Lactyl (K1); Dimethyl (K10); Propionyl (K11)")
+
+ptm_toProForma(seq = "KSAPATGGVKKPHR",
+               mod = "TMAyl_correct (Any N-term); Butyryl (K1); Trimethyl (K10); Propionyl (K11)")
+
+ptm_toProForma(  seq = "KQLATKVAR",
+                 mod = "Propionyl (Any N-term); Propionyl (K1); Propionyl (K6)")
+
+
+```
+
+### 1.4 `ptm_labelingAssessment()`
+
+Lysine derivatization can go rogue and can label other residues such as S, T, and Y. When using propionic anhydride, this is called ' Overpropionylation'. Hydroxylamine is used to remove this adventitous labeling, so-called "reverse propionylation'. This function help for a quick visual review to see if overpropionylation is limited or enormous.
+
+This for sure assume that the database search results are ran with `Propionyl (STY)` or any other labeling modification is selected.
+
+```{r Assess overlabeling, fig.width=7.1, fig.height=5}
+df_label <- readxl::read_excel(path = 'labeling_comparison.xlsx', 
+                               sheet = 'Best PSM from protein sets')
+
+
+ptm_labelingAssessment(df = df_label, 
+                       seq_col = sequence, 
+                       seq = 'KSAP.TGGVKKPHR',
+                       ptm_col = modifications , 
+                       int_col = dplyr::starts_with('abundance_'))['plot']
+
+
+
+
+```
+
+# 2.MGF-related
+
+Some functions that operate on `MGF` (Mascot Generic Format) files.
+
+## 2.1 `mgf_searchDiagIon()`
+
+It searches in all MS/MS scan for pre-defined `m/z` of diagnostic ions. It reports their presence and their relative intensities relative to the base peak.
+
+```{r Extract diagnostic ions, message = FALSE}
+
+mgf_file <- 'toyExample.mgf'
+
+List_DiagIons <- c(156.102, 126.091)
+
+tolerance = 0.001
+
+mgf_searchDiagIon(mgf_file = mgf_file, 
+                  diag_ion = List_DiagIons, 
+                  tol = tolerance, 
+                  save_file = FALSE)
+
+
+
+```
+
+## 2.1 `mgf_extractMS2scan()`
+
+It extracts specific scan(s) as dataframes with columns: 1. `mgf`: Name of the mgf file with extension. 2. `m/z`: 3. `intensity` 4. `scan`
+
+```{r Extract MS/MS scan from mgf file/R}
+
+scans = c(5920, 6289)
+mgf_extractMS2scan(mgf_file ='toyExample.mgf', 
+                   scan= scans,  
+                   save_file = FALSE, #save results as csv file
+                   export_mgf = FALSE #save selected scans as mgf file
+                   )
+
+```
+
+## 2.2 `mgf_extractScan()`
+
+Same function as above but faster (`Python`-based ran in `R`).
+
+```{r Extract MS/MS scan from mgf file/Python}
+
+scan15338 <- mgf_extractScan(mgf_file = 'toyExample.mgf', scan = 15338)
+
+head(scan15338)
+```
+
+# 3.Plots
+
+It generates fragment `b` and `y` fragment ions and draws annotated spectrum. This function relies on the `spectrum_utils` pyhton package.
+
+## 3.1 `plot_annotateSpectrum()`
+
+```{r Annotate MS/MS spectrum, echo=TRUE, message = FALSE, fig.show='hide'}
+
+plot_annotateSpectrum(
+  Profrma_peptide = "K[+98.03678]SAPATGGVK[+56.02622]K[+56.02622]PHR",
+prec_mz = 822.465,
+prec_z = 2,
+mz = scan15338$mz,
+intensity = scan15338$intensity,
+title= "H3 K27_R40 ac-pr-pr [2+]",
+output_plot_name = "myplot.png")
+
+
+```
+
+```{r fig.height=7, fig.width=7.1, out.width = "690px", echo= FALSE}
+knitr::include_graphics("myplot.png")
+
+```
+
+## 3.2 `plot_scheduledPRM()`
+
+It counts and plots the number of precursors monitored per time unit in scheduled PRM experiment. It takes a list of `m/z` and `RT` as input as well as the retention time window size and peak width.
+
+```{r Scheduled PRM plot, fig.width=7.1, fig.height=5}
+
+peptides_df <- data.frame(
+
+moz= c(553.9903,830.4623,844.4781,549.3170,
+         837.4703,822.4650,836.4807,543.9861,
+         548.6583,829.4728,844.4781,858.4938,
+         558.6614,563.3330,851.4865,836.4807,
+         850.4963,553.3290,558.0017,843.4885,
+         487.2567,644.8226,683.8279,547.2980,
+         669.8381,699.3384,726.8357,622.8535,
+         776.9298),
+
+
+rt= c(26.79,30.15,36.62,23.51,32.60,
+       31.58,37.41,23.94,23.83,33.38,
+       35.11,41.70,28.49,28.32,37.64,
+       40.43,46.31,33.47,33.31,42.83,
+       12.22,23.02,27.85,31.76,34.15,
+       40.01,44.72,52.09,62.64)
+)
+
+
+plot_scheduledPRM(df = peptides_df,
+                  rt_col = rt, 
+                  mz_col = moz, 
+                  rt_window = c(3, 5), 
+                  peak_width = 0.3, 
+                  save_plot = FALSE)
+
+```
+
+## 3.3 `plot_scheduledPRMranges()`
+
+A plot as above, but shows the the rt range of each `m/z` allowing visually to see how many concurrent precursor are overlapping at a certain time point.
+
+```{r Scheduled PRM range plot, fig.width=7.1, fig.height=5}
+df <- readr::read_csv('isolation_list.csv', show_col_types = FALSE)
+plot_schdueldPRMranges(df = df, 
+                        tr_start = `Start [min]`, 
+                        tr_end = `End [min]`, 
+                        y_axis = `Mass [m/z]`,
+                        label = `Mass [m/z]`, 
+                        save_plot = FALSE  )
+```
+
+## 3.4 `plot_mirrorSpectra()`
+
+It mirrors two spectra, It takes as input `m/z` and `intensity` of each fragment ion. Another necessary column to provide is the `grouping_col` that contain the source of each fragment ion. The those tags should be specifified in `top_spec` and `bottom_spec`. The function does not have an aption to annotated the spectra.
+
+```{r Mirror spectra, fig.width=7.1, fig.height=5}
+scanraw <- mgf_extractScan(mgf_file = 'raw.mgf', scan = 8730)
+scanprocessed <- mgf_extractScan(mgf_file = 'SN_MH.mgf', scan = 8730)
+
+df_mirror <- bind_rows(scanraw, scanprocessed)
+
+plot_mirrorSpectra(data = df_mirror, 
+                   mz_col = mz, 
+                   intensity_col = intensity, 
+                   grouping_col = mgf, 
+                   top_spec = "SN_MH", 
+                   bottom_spec = "raw", 
+                   title = "")
+
+
+```
+
+## 3.5 `plot_H3vsH33()`
+
+A plot that shows relative abundance of canonical H3 versus H3.3 based on H3 K27-R40 peptidoforms.
+
+```{r H3vsH33 abudnance plot,fig.width=7.1, fig.height=5}
+
+df_H3 <- readxl::read_excel(path = '20231102_H3_STR_SUM.xlsx', 
+                               sheet = 'Best PSM from protein sets')
+
+plot_H3vsH33(df = df_H3, seq_col = sequence, seq_ptm_col = modifications, int_col = starts_with('abundance_'))
+```
+
+## 3.6 `plot_jitterbarIntvsPTM()`
+
+A bar plot with scattered points showing the mean/median of the measurement of each condition.
+
+```{r Jittered Bar Plot, fig.width=7.2, fig.height=8}
+
+df_K9K14_long <- readxl::read_excel(path = 'K9K14_long.xlsx') 
+
+plot_jitterbarIntvsPTM(dataset = df_K9K14_long,
+                       x_axis = PTM,
+                       y_axis = intensity,
+                       condition = Condition,
+                       id_col = 'H3 (K9_K14)')
+
+```
+
+## 3.7 `plot_intDensity()`
+
+```{r ridgeline plot, fig.width=7.2, fig.height=8}
+
+df <- read_xlsx(path = 'K9K14.xlsx')
+plot_intDensity(df = df, int_col = dplyr::starts_with("abundance_"))
+```
+
+# 4.Quantification
+
+## 4.1 `quant_relIntensity()`
+
+Calculates the relative intensity of each peptide in each sample based on the following equation: \frac{\Sigma \;{\rm{intensities}}\;{\rm{of}}\;{\rm{peptidoforms}}\;{\rm{containing}}\;{\rm{the}}\;{\rm{considered}}\;{\rm{hPTM}}}{\Sigma \;{\rm{intensities}}\;{\rm{of}}\;{\rm{all}}\;{\rm{observed}}\;{\rm{modified}}\;{\rm{forms}}\;{\rm{of}}\;{\rm{the}}\;{\rm{peptide}}.}.
+
+```{r Calculate R.A}
+df_K9K14 <- readxl::read_excel(path = 'K9K14.xlsx') 
+
+df_K9K14_norm <- quant_relIntensity(df = df_K9K14, 
+                   select_cols = starts_with('abundance_'), 
+                   grouping_var = sequence)
+
+
+#before normalization
+
+df_K9K14 |> select(starts_with('abundance_')) |> head()
+
+#after normalization
+df_K9K14_norm |> select(starts_with('abundance_')) |> head()
+```
+
+# 5.Spectral Library
+
+## 5.1 `blib_seamlessIDswap()`
+
+When building a spectral library, `Skyline` can create two libraries. The main `*.blib` library and the second `*_redundant.blib`. In histones, some times the best representative spectrum could be present in the redundant library not in the main one. To keep everything neat, this function takes the identification from the redundant library and place it in the main library and place the main identification in the redundant library. To confirm the successful switch, the new identification will be highlighted in red and the other will turn black.
+
+```{r Switch IDs Skyline Libraries}
+#blib_seamlessIDswap(db_main = , db_redundant = , rt = , mz = , tol = , file = )
+```
+
+# 6.Sequence Organization & Manipulation
+
+## 6.1 `seq_AAcountplot()`
+
+Count the occurrences of a residue in a sequence and compare it with other sequences.
+
+```{r fig.width=7.1, fig.height=4}
+H3_seq <-  "ARTKQTARKSTGGKAPRKQLATKAARKSAPATGGVKKPHRYRPGTVALREIRRYQKSTELLIRKLPFQRLVREIAQDFKTDLRFQSSAVMALQEACEAYLVGLFEDTNLCAIHAKRVTIMPKDIQLARRIRGERA"
+
+H4_seq <-  "SGRGKGGKGLGKGGAKRHRKVLRDNIQGITKPAIRRLARRGGVKRISGLIYEETRGVLKVFLENVIRDAVTYTEHAKRKTVTAMDVVYALKRQGRTLYGFGG"
+
+seq_AAcountplot(H3_seq, H4_seq, plot = TRUE)
+```
+
+## `seq_getHistPeptide()`
+
+```{r}
+
+df_new <- seq_getHistPeptide(df = df_H3, seq_col = sequence, histoneProtein = "H4")
+
+unique(df_new$sequence)
+
+```
+
+# 7.Scraping Online Data
+
+## 7.1 `litReview()`
+
+A quick literature review from <a href="https://pubmed.ncbi.nlm.nih.gov/">PubMed</a>
+
+```{r Literature review, message=FALSE}
+litReview(start = 2023, end = 2024, term = "Tiziana Bonaldi[au]")
+```
+
+## 7.2 `ptm_Uniprot()`
+
+It gets PTMs identified by proteomics from <a href="https://www.uniprot.org/">Uniprot</a>
+
+```{r Uniprot Proteomics PTMs}
+accession <- 'P42858' #HTT protein
+
+df <- ptm_Uniprot(Uniprot_accession = accession)
+
+columns_to_show <- c('name', 'type','position', 'peptide', 'PEP', 'sources')
+
+df |> dplyr::select(all_of(columns_to_show))
+```
