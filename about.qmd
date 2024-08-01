@@ -17,15 +17,16 @@ suppressPackageStartupMessages(library(icons))
     -   EDyP Lab - CEA Grenoble/France
 
     -   Skills: Histone extraction, WB, proteomics quantitative analysis\
-
 \
 
 -   6-month internship (2021): Impact of detergents on sequencing membrane proteins using MALDI-MS
     -   Institut de Biologie Structurale (IBS) - Grenoble/France
+    
     -   Skills: MALDI-MS, buffer-exchange, protein purification\
     \
 -   6-month internship (2020): Ultradeep Sequence-Function Mapping of Prokaryotic Promoter Libraries
     -   Department of Biosystems Science and Engineering (D-BSSE) - ETH - Basel/Switzerland
+    
     -   Skills: PCR, molecular cloning, miniprep, fluorescence measurement
 
 ## Publications
