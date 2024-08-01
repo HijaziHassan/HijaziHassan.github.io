@@ -15,10 +15,15 @@ suppressPackageStartupMessages(library(icons))
 
 -   PhD Project (2021 - currently): Studying Perturbed Histone Acylations in Huntington's Disease by Proteomics
     -   EDyP Lab - CEA Grenoble/France
+
     -   Skills: Histone extraction, WB, proteomics quantitative analysis\
+
+\
+
 -   6-month internship (2021): Impact of detergents on sequencing membrane proteins using MALDI-MS
     -   Institut de Biologie Structurale (IBS) - Grenoble/France
     -   Skills: MALDI-MS, buffer-exchange, protein purification\
+    \
 -   6-month internship (2020): Ultradeep Sequence-Function Mapping of Prokaryotic Promoter Libraries
     -   Department of Biosystems Science and Engineering (D-BSSE) - ETH - Basel/Switzerland
     -   Skills: PCR, molecular cloning, miniprep, fluorescence measurement
@@ -27,7 +32,7 @@ suppressPackageStartupMessages(library(icons))
 
 [Sequencing intact membrane proteins using MALDI mass spectrometry]{style="font-weight: bold;"}
 
-[Edison Zhamungui Sánchez; **Hassan Hijazi**; Jana Haidar; Enrica Mecarelli; Elda Bauda; Isabelle Petit-Härtlein; Jean-Marie Teulon; Jean-Luc Pellequer; Elisabetta Boeri Erba]{style="font-size: 14px;"}
+[Edison Zhamungui Sánchez; **Hassan Hijazi**; Jana Haidar; Enrica Mecarelli; Elda Bauda; Isabelle Petit-Härtlein; Jean-Marie Teulon; Jean-Luc Pellequer; Elisabetta Boeri Erba]{style="font-size: 14px;"}
 
 [Front. Anal. Sci., 13 July 2023]{style="font-weight: bold; font-size: 12px;"}
 
