@@ -17,16 +17,15 @@ suppressPackageStartupMessages(library(icons))
     -   EDyP Lab - CEA Grenoble/France
 
     -   Skills: Histone extraction, WB, proteomics quantitative analysis\
-\
-
+        \
 -   6-month internship (2021): Impact of detergents on sequencing membrane proteins using MALDI-MS
     -   Institut de Biologie Structurale (IBS) - Grenoble/France
-    
+
     -   Skills: MALDI-MS, buffer-exchange, protein purification\
-    \
+        \
 -   6-month internship (2020): Ultradeep Sequence-Function Mapping of Prokaryotic Promoter Libraries
     -   Department of Biosystems Science and Engineering (D-BSSE) - ETH - Basel/Switzerland
-    
+
     -   Skills: PCR, molecular cloning, miniprep, fluorescence measurement
 
 ## Publications
@@ -46,6 +45,11 @@ suppressPackageStartupMessages(library(icons))
 [Synthetic and Systems Biotechnology 30 March 2022]{style="font-weight: bold; font-size: 12px;"}
 
 [DOI](https://www.sciencedirect.com/science/article/pii/S2405805X22000278?via%3Dihub){.btn .btn-outline-primary .btn role="button" data-toggle="tooltip" title="Read the article online"}
+
+
+[Mind Your Spectra: Bullet Points to Validate the Identification of Isobaric Histone Peptidoforms <span style="color: red;">(under revision)</span>]{style="font-weight: bold;"}
+
+[**Hassan Hijazi**, Julie Manessier, Sabine Brugiere, Tina Ravnsborg, Marie Courçon, Ole N Jensen, Anne-Marie Hesse, Christophe Bruley, Delphine Pflieger]{style="font-size: 14px;"}
 
 ## Education
 
@@ -100,13 +104,15 @@ suppressPackageStartupMessages(library(icons))
 
 -   A member of 2020 iGEM team of Paris Saclay - Evry ([Golden Medal Winner](https://2020.igem.org/Team:Evry_Paris-Saclay/Team))
 
-- Master 2 student supervision (2024) as part of the project "HD-EpiEnergy". 
+-   Master 2 student supervision (2024) as part of the project "HD-EpiEnergy".
 
 ## Teaching Experience
 
--   **Math and Biology Teacher** \[2015 - 2019\] \| Accra Community School - Ghana
+-   **Introduction to Proteomics** lecture for master 1 students as part of 'DNA synthesis, analysis, omics, big data and biotechnology' module \[to be delivered on 13 October 2024\] \| University of Grenoble Alpes
 
--   **Introduction to Proteomics** lecture for master 2 students as part of 'High Through Biology' course \[to be delivered in October 2024\] \| University of Grenoble Alpes
+-   **Introduction to Proteomics** lecture for master 2 students as part of 'High Through Biology' course \[to be delivered on the 3$^{rd}$ of November 2024\] \| University of Grenoble Alpes
+
+-   **Math and Biology Teacher** \[2015 - 2019\] \| Accra Community School - Ghana
 
 ## Let's Connect!
 
