@@ -16,17 +16,17 @@ suppressPackageStartupMessages(library(icons))
 -   PhD Project (2021 - currently): Studying Perturbed Histone Acylations in Huntington's Disease by Proteomics
     -   EDyP Lab - CEA Grenoble/France
 
-    -   Skills: Histone extraction, WB, proteomics quantitative analysis\
-        \
+    -   [During this project, I extracted histones from testis and brain tissue and prepare them for MS analysis by derivitizing free amines on un modified or monomethylated lysine side chains and on free N-termini as well. I did this in gel and in solution. I interrogated the data using Mascot for identification and Proline for validation. I then manually validated the spectra to confirm identification and wrote R scripts to organize and visualize the results. I ended up wrapping all the scripts in an R package, which accelerated data analysis and ensured reproducibility and transparency in reporting the results end-to-end, in addition to plots that allow you to have a look at the result and also for quality checks to spot anomalies immediately.]{style="font-size: 14px;"}\
 -   6-month internship (2021): Impact of detergents on sequencing membrane proteins using MALDI-MS
     -   Institut de Biologie Structurale (IBS) - Grenoble/France
 
-    -   Skills: MALDI-MS, buffer-exchange, protein purification\
+    -   [Detergents are known to interfere with the protein mass spectra reducing the resolution and mass accuracy of the fragment ions. Thus it is important to remove of as much detergent as possible just before MALDI sequencing. During this internship, I screened a variety of detergents (non-ionic and zwitterionic) and explored their differential effects on different soluble proteins. I then investigated an *E. coli* membrane receptor, FhuA, as a case study illustrating the sequencing profiles of FhuA solubilized by different detergents.]{style="font-size: 14px;"}
+
         \
 -   6-month internship (2020): Ultradeep Sequence-Function Mapping of Prokaryotic Promoter Libraries
     -   Department of Biosystems Science and Engineering (D-BSSE) - ETH - Basel/Switzerland
 
-    -   Skills: PCR, molecular cloning, miniprep, fluorescence measurement
+    -   [Promoters are crucial for initiation of transcription and therefore regulation of gene expression. However, we still do not fully understand how a promoter sequence encodes its functional properties. This hampers the progress of synthetic biology and challenges its engineering discipline. To overcome this limitation, we adapted a recently developed DNA-based phenotyping approach (ultradeep Acquisition of Sequence-Phenotype Interrelations; uASPIre) to enable high throughout recording of prokaryotic promoters. We developed a double recombinase system that allows us to quantitatively measure sequence-function relationships of large promoter libraries with high temporal resolution. To better understand the underlying mechanisms, we further developed a computational model to predict expression and activity of Bxb1, one of the used recombinases.]{style="font-size: 14px;"}
 
 ## Publications
 
@@ -46,8 +46,7 @@ suppressPackageStartupMessages(library(icons))
 
 [DOI](https://www.sciencedirect.com/science/article/pii/S2405805X22000278?via%3Dihub){.btn .btn-outline-primary .btn role="button" data-toggle="tooltip" title="Read the article online"}
 
-
-[Mind Your Spectra: Bullet Points to Validate the Identification of Isobaric Histone Peptidoforms <span style="color: red;">(under revision)</span>]{style="font-weight: bold;"}
+[Mind Your Spectra: Bullet Points to Validate the Identification of Isobaric Histone Peptidoforms]{style="font-weight: bold;"}[(under revision)]{style="color: red;"}
 
 [**Hassan Hijazi**, Julie Manessier, Sabine Brugiere, Tina Ravnsborg, Marie Courçon, Ole N Jensen, Anne-Marie Hesse, Christophe Bruley, Delphine Pflieger]{style="font-size: 14px;"}
 
