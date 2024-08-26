@@ -11,12 +11,11 @@ suppressPackageStartupMessages(library(icons))
 
 ```
 
-```{=html}
-<script src="download.js"></script>
-```
-<button id="download-cv" class="btn">
 
-<i class="fa fa-download"></i> 1-page CV</button>
+<button onclick="window.location.href='files/cv-2024.pdf';" class="btn">
+<i class="fa fa-download"></i> 
+1-page CV
+</button>
 
 ## Professional Experience
 
