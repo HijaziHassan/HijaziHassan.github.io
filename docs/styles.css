@@ -1,1 +1,16 @@
 /* css styles */
+/* Style the button */
+.btn {
+    background-color: #00bfa5;
+    border: none;
+    color: white;
+    text-align: center;
+    padding: 10px 24px;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+/* Darker background on mouse-over */
+.btn:hover {
+    background-color: #009c86;
+}
