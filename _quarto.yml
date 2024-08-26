@@ -5,6 +5,7 @@ project:
     - "*.xlsx"
     - "*.mgf"
     - "*.png"
+    - "cv-2024.pdf"
 
 website:
   title: "Hassan M. Hijazi"
