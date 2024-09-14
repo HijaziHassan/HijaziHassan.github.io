@@ -4,10 +4,20 @@
     background-color: #00bfa5;
     border: none;
     color: white;
-    padding: 8px 15px;
+    padding: 8px 15px; /* Maintain balanced padding */
     cursor: pointer;
     font-size: 12px;
+    display: inline-flex; /* Use flexbox to align content */
+    align-items: center; /* Vertically center icon and text */
+    justify-content: center; /* Ensure everything is centered */
+    line-height: 1; /* Eliminate extra space below text */
+    white-space: nowrap; /* Prevent text wrapping */
 }
+
+.btn i {
+    margin-right: 5px; /* Add spacing between icon and text */
+}
+
 
 /* Darker background on mouse-over */
 .btn:hover {
