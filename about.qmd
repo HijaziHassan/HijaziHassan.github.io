@@ -109,7 +109,7 @@ suppressPackageStartupMessages(library(icons))
 
 -   Mass Spectrometry and Proteomic Analysis (SMAP) conference - Lille - France \[Bioinformatics workshop on using [MGFBoost](https://www.profiproteomics.fr/proline/other-tools/) for reliable histone post-translational modification identification\]\
 
--   HUPO - Germany (October 2024) \[Abstract accepted\]\
+-   HUPO - Germany (October 2024) \[Poster\]\
 
 ## Professional Activities
 
@@ -121,9 +121,9 @@ suppressPackageStartupMessages(library(icons))
 
 ## Teaching Experience
 
--   **Introduction to Proteomics** lecture for master one students as part of '[UE Biotechnology of DNA systems](https://formations.univ-grenoble-alpes.fr/fr/catalogue-2021/master-XB/master-ingenierie-de-la-sante-IAQKSXOB/parcours-biohealth-engineering-1re-et-2e-annee-IBKJR8K0/ue-biotechnology-of-dna-systems-L1AU2FOW.html)' \| Université Grenoble Alpes
+-   **Introduction to Proteomics** lecture (4 h) for master one students as part of '[UE Biotechnology of DNA systems](https://formations.univ-grenoble-alpes.fr/fr/catalogue-2021/master-XB/master-ingenierie-de-la-sante-IAQKSXOB/parcours-biohealth-engineering-1re-et-2e-annee-IBKJR8K0/ue-biotechnology-of-dna-systems-L1AU2FOW.html)' \| Université Grenoble Alpes \[October 2024\]
 
--   **Introduction to Proteomics** lecture for master 2 students as part of 'High Throughput Biology' course \[to be delivered on the 3$^{rd}$ of November 2024\] \| Université Grenoble Alpes
+-   **Introduction to Proteomics** lecture (3 h) for master 2 students as part of 'High Throughput Biology' course \| Université Grenoble Alpes \[November 2024\]
 
 -   **Math and Biology Teacher** \[2015 - 2019\] \| Accra Community School - Ghana
 
