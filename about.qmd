@@ -13,7 +13,9 @@ suppressPackageStartupMessages(library(icons))
 
 <button onclick="window.open(&#39;https://hijazihassan.github.io/files/cv-2024.pdf&#39;, &#39;_blank&#39;);" class="btn">
 
-<i class="fa fa-download"></i>1-page CV</button>
+<i class="fa fa-download"></i>1-page CV
+
+</button>
 
 ## Professional Experience
 
@@ -80,7 +82,7 @@ suppressPackageStartupMessages(library(icons))
 
 -   Programming languages: R{{< fa brands r-project >}} and Python{{< fa brands python >}}
 
-    -   I have developed **'HistonePTM'**, an R package to facilitate histone PTM analysis (not made public yet but have a glance at the [vignette](https://hijazihassan.github.io/histonePTM.html)).
+    -   I have developed [**'HistonePTM'**](https://github.com/HijaziHassan/histonePTM), an R package to facilitate histone PTM analysis ([vignette](https://hijazihassan.github.io/histonePTM.html)).
 
 -   Graphics software: Inkscape
 

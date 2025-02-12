@@ -32,7 +32,7 @@
     "href": "about.html#computational-skills",
     "title": "Hassan Hijazi",
     "section": "Computational Skills",
-    "text": "Computational Skills\n\nProgramming languages: R and Python\n\nI have developed ‘HistonePTM’, an R package to facilitate histone PTM analysis (not made public yet but have a glance at the vignette).\n\nGraphics software: Inkscape\nWriting: \\(\\LaTeX\\)"
+    "text": "Computational Skills\n\nProgramming languages: R and Python\n\nI have developed ‘HistonePTM’, an R package to facilitate histone PTM analysis (vignette).\n\nGraphics software: Inkscape\nWriting: \\(\\LaTeX\\)"
   },
   {
     "objectID": "about.html#languages",
