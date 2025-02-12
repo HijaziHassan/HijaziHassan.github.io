@@ -13,9 +13,7 @@ suppressPackageStartupMessages(library(icons))
 
 <button onclick="window.open(&#39;https://hijazihassan.github.io/files/cv-2024.pdf&#39;, &#39;_blank&#39;);" class="btn">
 
-<i class="fa fa-download"></i>1-page CV
-
-</button>
+<i class="fa fa-download"></i>1-page CV </button>
 
 ## Professional Experience
 
@@ -49,6 +47,16 @@ suppressPackageStartupMessages(library(icons))
 [Mind Your Spectra: Bullet Points to Validate the Identification of Isobaric Histone Peptidoforms]{style="font-weight: bold;"} [(under revision)]{style="color: red;"}
 
 [**Hassan Hijazi**, Julie Manessier, Sabine Brugiere, Tina Ravnsborg, Marie Courçon, Ole N Jensen, Anne-Marie Hesse, Christophe Bruley, Delphine Pflieger]{style="font-size: 14px;"}
+
+[DOI](https://www.biorxiv.org/content/10.1101/2024.11.13.623238v2){.btn .btn-outline-primary .btn role="button" data-toggle="tooltip" title="Read the article online"}
+
+[Quantitative Profiling of Histone Variants and Posttranslational Modifications by Tandem Mass Spectrometry in Arabidopsis]{style="font-weight: bold;"}
+
+[Vangeli Geshkovski, **Hassan Hijazi**, Julie Manessier, Sabine Brugière, Marie Courçon, Gilles Vachon, Delphine Pflieger & Cristel C. Carles]{style="font-size: 14px;"}
+
+[Methods in Molecular Biology ((MIMB,volume 2873)), 23 November 2024]{style="font-weight: bold; font-size: 12px;"}
+
+[DOI](https://link.springer.com/protocol/10.1007/978-1-0716-4228-3_2 "Read the article online"){.btn .btn-outline-primary .btn role="button" data-toggle="tooltip"}
 
 [Sequencing intact membrane proteins using MALDI mass spectrometry]{style="font-weight: bold;"}
 
