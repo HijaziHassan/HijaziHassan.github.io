@@ -11,13 +11,16 @@ suppressPackageStartupMessages(library(icons))
 
 ```
 
-<button onclick="window.open(&#39;https://hijazihassan.github.io/files/cv-2024.pdf&#39;, &#39;_blank&#39;);" class="btn">
 
-<i class="fa fa-download"></i>1-page CV </button>
+<button onclick="window.open(&#39;https://hijazihassan.github.io/files/cv-2025.pdf&#39;, &#39;_blank&#39;);" class="btn">
+
+<i class="fa fa-download"></i>1-page CV</button>
+
+\
 
 ## Professional Experience
 
--   PhD Project (2021 - currently): Studying Perturbed Histone Acylations in Huntington's Disease by Proteomics
+-   PhD Project (2021 - 2025): Studying Perturbed Histone Acylations in Huntington's Disease by Proteomics
     -   EDyP Lab - CEA Grenoble/France
 
     -   [This project aims to identify and quantify differentially abundant histone post-translational modifications (hPTMs) between WT and Huntington's disease mouse models. For this purpose, I:]{style="font-size: 14px;"}
@@ -29,8 +32,14 @@ suppressPackageStartupMessages(library(icons))
         -   [I interrogated the data using Mascot for identification and Proline or Skyline for validation and quantification.]{style="font-size: 14px;"}
 
         -   [I manually validate the MS/MS spectra to confirm identifications, especially for combinatorial hPTM patterns and isobaric peptides.]{style="font-size: 14px;"}
-
-        -   [I write R scripts to organize and visualize the results. I ended up wrapping all the scripts in the form of an R package, which accelerated data analysis and ensured reproducibility and transparency in reporting the results end-to-end, in addition to plots that allow you to have a look at the result and also for quality checks to spot anomalies immediately.]{style="font-size: 14px;"}\
+        
+        - [I analyzed proteomics data from stable isotope tracing experiment after heavy glucose injection in terms of heavy acetyl incorporation and other PTMs.]{style="font-size: 14px;"}
+        
+        - [I implemented and optimized histone derivatization protocols in the lab using either propionic or trimethylacetic anhydride.]{style="font-size: 14px;"}
+        
+        - [I wrote R scripts to organize and visualize the results. I ended up wrapping all the scripts in the form of an R package, which accelerated data analysis and ensured reproducibility and transparency in reporting the results end-to-end, in addition to plots that allow you to have a look at the result and also for quality checks to spot anomalies immediately.]{style="font-size: 14px;"}\
+        
+        
 -   6-month internship (2021): Impact of detergents on sequencing membrane proteins using MALDI-MS
     -   Institut de Biologie Structurale (IBS) - Grenoble/France
 
@@ -44,11 +53,13 @@ suppressPackageStartupMessages(library(icons))
 
 ## Publications
 
-[Mind Your Spectra: Bullet Points to Validate the Identification of Isobaric Histone Peptidoforms]{style="font-weight: bold;"} [(under revision)]{style="color: red;"}
+[Mind Your Spectra: Bullet Points to Validate the Identification of Isobaric Histone Peptidoforms]{style="font-weight: bold;"}
 
 [**Hassan Hijazi**, Julie Manessier, Sabine Brugiere, Tina Ravnsborg, Marie Courçon, Ole N Jensen, Anne-Marie Hesse, Christophe Bruley, Delphine Pflieger]{style="font-size: 14px;"}
 
-[DOI](https://www.biorxiv.org/content/10.1101/2024.11.13.623238v2){.btn .btn-outline-primary .btn role="button" data-toggle="tooltip" title="Read the article online"}
+[**J. Proteome Res. 24 May 2025**]{style="font-weight: bold; font-size: 12px;"}
+
+[DOI](https://pubs.acs.org/doi/10.1021/acs.jproteome.4c01056){.btn .btn-outline-primary .btn role="button" data-toggle="tooltip" title="Read the article online"}
 
 [Quantitative Profiling of Histone Variants and Posttranslational Modifications by Tandem Mass Spectrometry in Arabidopsis]{style="font-weight: bold;"}
 
@@ -76,7 +87,7 @@ suppressPackageStartupMessages(library(icons))
 
 ## Education
 
--   **PhD in Chemical Biology** \[2021 - *currently*\] \| Université Grenoble Alpes
+-   **PhD in Chemical Biology** \[2021 - 2025\] \| Université Grenoble Alpes
 
 -   **Master 2 in NanoBiology** \[2021\] \| Université Grenoble Alpes
 
@@ -108,32 +119,34 @@ suppressPackageStartupMessages(library(icons))
 
 -   French Proteomics Society - Club-Jeunes (FPS-CJ)
 
-    -   Bourdeaux \[Flash Talk\]\
+    -   Bourdeaux - France (2021) \[Flash Talk\]\
 
 -   Joint Meeting of Spanish, French, and Portuguese Proteomics Societies
 
-    -   ProteoVilamoura - Portugal (2022) \[Flash talk\]
-    -   ProteoAix - France (2023)\[Poster\]
+    -   ProteoVilamoura - Vilamoura - Portugal (2022) \[Flash talk\]
+    -   ProteoAix - Aix-en-Provence - France (2023) \[Poster\]
 
--   Symposium "Signaling through Chromatin" - Grenoble (2023) \[Poster\]\
+-   Symposium "Signaling through Chromatin" - Grenoble -France (2023) \[Poster\]\
 
--   Mass Spectrometry and Proteomic Analysis (SMAP) conference - Lille - France \[Bioinformatics workshop on using [MGFBoost](https://www.profiproteomics.fr/proline/other-tools/) for reliable histone post-translational modification identification\]\
+-   Mass Spectrometry and Proteomic Analysis (SMAP) conference - Lille - France (2024) \[Bioinformatics workshop on using [MGFBoost](https://www.profiproteomics.fr/proline/other-tools/) for reliable histone post-translational modification identification\]\
 
--   HUPO - Germany (October 2024) \[Poster\]\
+-   HUPO - Dresden - Germany (October 2024) \[Poster\]
+
+-   EuPA - Saint-Malo - France (June 2025) \[Oral talk\]\
 
 ## Professional Activities
 
--   A Current member of French Proteomics Society - Club Jeunes ([FPS-CJ Bureau](http://clubjeunesfps.free.fr/bureau.html)).
+-   A member of French Proteomics Society - Club Jeunes ([FPS-CJ Bureau](http://clubjeunesfps.free.fr/bureau.html)).
 
 -   A member of 2020 iGEM team of Paris Saclay - Evry ([Golden Medal Winner](https://2020.igem.org/Team:Evry_Paris-Saclay/Team))
 
--   Master 2 student supervision (2024) as part of the project "HD-EpiEnergy".
+-   Students co-supervision (2023-2024) for their masters project.
 
 ## Teaching Experience
 
--   **Introduction to Proteomics** lecture (4 h) for master one students as part of '[UE Biotechnology of DNA systems](https://formations.univ-grenoble-alpes.fr/fr/catalogue-2021/master-XB/master-ingenierie-de-la-sante-IAQKSXOB/parcours-biohealth-engineering-1re-et-2e-annee-IBKJR8K0/ue-biotechnology-of-dna-systems-L1AU2FOW.html)' \| Université Grenoble Alpes \[October 2024\]
+-   **Introduction to Proteomics** lecture (4 h) for master students as part of '[UE Biotechnology of DNA systems](https://formations.univ-grenoble-alpes.fr/fr/catalogue-2021/master-XB/master-ingenierie-de-la-sante-IAQKSXOB/parcours-biohealth-engineering-1re-et-2e-annee-IBKJR8K0/ue-biotechnology-of-dna-systems-L1AU2FOW.html)' \| Université Grenoble Alpes \[October 2024\]
 
--   **Introduction to Proteomics** lecture (3 h) for master 2 students as part of 'High Throughput Biology' course \| Université Grenoble Alpes \[November 2024\]
+-   **Introduction to Proteomics** lecture (3 h) for master students as part of 'High Throughput Biology' course \| Université Grenoble Alpes \[November 2024\]
 
 -   **Math and Biology Teacher** \[2015 - 2019\] \| Accra Community School - Ghana
 

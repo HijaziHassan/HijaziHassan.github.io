@@ -21,7 +21,7 @@ about:
       href: https://orcid.org/0000-0001-6408-1768
     - icon: envelope
       text: Email
-      href: mailto:hassan.hijazi@cea.fr
+      href: mailto:hejaziihassan@gmail.com
 ---
 
 ```{r echo = FALSE, warning=FALSE}
@@ -31,16 +31,10 @@ suppressPackageStartupMessages(library(icons))
 
 ## Hi there!
 
-Thank you for dropping by! My name is Hassan and here are a few words about me:
-
-## What am I currently doing?
-
-I am a PhD student at [EDyP lab](https://www.edyp.fr/web/) (CEA - Grenoble) since October 2021 (**expected to finish by the end of March 2025**).
-
-I use mass spectrometry technique to study histone post-translational modifications (hPTMs) in the context of Huntington's Disease (HD).
+Thank you for dropping by!
 
 ## Open to Work ...!
 
 I am seeking a project where I can apply the knowledge and skills I've gained in proteomics and programming throughout my PhD journey.
 
-Ideally, this role would be at the intersection of wet and dry lab work, involving the acquisition, cleaning, and analysis of data. The final goal would be to test statistical approaches, feed data into machine learning models, or develop tools and pipelines to streamline analysis, ultimately gaining insights into the intricate underlying biology.
+Ideally, this role would be at the intersection of wet and dry lab work, involving the acquisition, cleaning, and analysis of proteomics data in a clinical context related to human health.

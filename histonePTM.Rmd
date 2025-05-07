@@ -97,14 +97,16 @@ Lysine derivatization can go rogue and can label other residues such as S, T, an
 This for sure assume that the database search results are ran with `Propionyl (STY)` or any other labeling modification is selected.
 
 ```{r Assess overlabeling, fig.width=7.1, fig.height=5}
-df_label <- readxl::read_excel(path = 'labeling_comparison.xlsx', 
+df_label <- readxl::read_excel(path = './docs/labeling_comparison.xlsx', 
                                sheet = 'Best PSM from protein sets')
 
 
 ptm_labelingAssessment(df = df_label, 
                        seq_col = sequence, 
-                       seq = 'KSAP.TGGVKKPHR',
-                       ptm_col = modifications , 
+                       seq = 'KSAPATGGVKKPHR',
+                       ptm_col = modifications,
+                       show_text = TRUE,
+                       type = "dodged",
                        int_col = dplyr::starts_with('abundance_'))['plot']
 
 
@@ -122,7 +124,7 @@ It searches in all MS/MS scan for pre-defined `m/z` of diagnostic ions. It repor
 
 ```{r Extract diagnostic ions, message = FALSE}
 
-mgf_file <- 'toyExample.mgf'
+mgf_file <- './docs/toyExample.mgf'
 
 List_DiagIons <- c(156.102, 126.091)
 
@@ -144,7 +146,7 @@ It extracts specific scan(s) as dataframes with columns: 1. `mgf`: Name of the m
 ```{r Extract MS/MS scan from mgf file/R}
 
 scans = c(5920, 6289)
-mgf_extractMS2scan(mgf_file ='toyExample.mgf', 
+mgf_extractMS2scan(mgf_file ='./docs/toyExample.mgf', 
                    scan= scans,  
                    save_file = FALSE, #save results as csv file
                    export_mgf = FALSE #save selected scans as mgf file
@@ -158,7 +160,7 @@ Same function as above but faster (`Python`-based ran in `R`).
 
 ```{r Extract MS/MS scan from mgf file/Python}
 
-scan15338 <- mgf_extractScan(mgf_file = 'toyExample.mgf', scan = 15338)
+scan15338 <- mgf_extractScan(mgf_file = './docs/toyExample.mgf', scan = 15338)
 
 head(scan15338)
 ```
@@ -229,7 +231,7 @@ plot_scheduledPRM(df = peptides_df,
 A plot as above, but shows the the rt range of each `m/z` allowing visually to see how many concurrent precursor are overlapping at a certain time point.
 
 ```{r Scheduled PRM range plot, fig.width=7.1, fig.height=5}
-df <- readr::read_csv('isolation_list.csv', show_col_types = FALSE)
+df <- readr::read_csv('./docs/isolation_list.csv', show_col_types = FALSE)
 plot_schdueldPRMranges(df = df, 
                         tr_start = `Start [min]`, 
                         tr_end = `End [min]`, 
@@ -242,18 +244,18 @@ plot_schdueldPRMranges(df = df,
 
 It mirrors two spectra, It takes as input `m/z` and `intensity` of each fragment ion. Another necessary column to provide is the `grouping_col` that contain the source of each fragment ion. The those tags should be specifified in `top_spec` and `bottom_spec`. The function does not have an aption to annotated the spectra.
 
-```{r Mirror spectra, fig.width=7.1, fig.height=5}
-scanraw <- mgf_extractScan(mgf_file = 'raw.mgf', scan = 8730)
-scanprocessed <- mgf_extractScan(mgf_file = 'SN_MH.mgf', scan = 8730)
+```{r Mirror spectra, fig.width=7.1, fig.height=5, }
+scanraw <- mgf_extractMS2scan(mgf_file = './docs/raw.mgf', scan = 8730)
+scanprocessed <- mgf_extractMS2scan(mgf_file = './docs/SN_MH.mgf', scan = 8730)
 
 df_mirror <- bind_rows(scanraw, scanprocessed)
 
-plot_mirrorSpectra(data = df_mirror, 
-                   mz_col = mz, 
-                   intensity_col = intensity, 
-                   grouping_col = mgf, 
-                   top_spec = "SN_MH", 
-                   bottom_spec = "raw", 
+plot_mirrorSpectra(data = df_mirror,
+                   mz_col = mz,
+                   intensity_col = intensity,
+                   grouping_col = mgf,
+                   top_spec = "SN_MH",
+                   bottom_spec = "raw",
                    title = "")
 
 
@@ -265,10 +267,10 @@ A plot that shows relative abundance of canonical H3 versus H3.3 based on H3 K27
 
 ```{r H3vsH33 abudnance plot,fig.width=7.1, fig.height=5}
 
-df_H3 <- readxl::read_excel(path = '20231102_H3_STR_SUM.xlsx', 
+df_H3 <- readxl::read_excel(path = './docs/20231102_H3_STR_SUM.xlsx', 
                                sheet = 'Best PSM from protein sets')
 
-plot_H3vsH33(df = df_H3, seq_col = sequence, seq_ptm_col = modifications, int_col = starts_with('abundance_'))
+plot_H3vsH33(df = df_H3, seq_col = sequence, seq_ptm_col = modifications, int_col = starts_with('abundance_'), save_plot = FALSE, save_file = FALSE)['plot']
 ```
 
 ## 3.6 `plot_jitterbarIntvsPTM()`
@@ -277,13 +279,14 @@ A bar plot with scattered points showing the mean/median of the measurement of e
 
 ```{r Jittered Bar Plot, fig.width=7.2, fig.height=8}
 
-df_K9K14_long <- readxl::read_excel(path = 'K9K14_long.xlsx') 
+df_K9K14_long <- readxl::read_excel(path = './docs/K9K14_long.xlsx') 
 
 plot_jitterbarIntvsPTM(dataset = df_K9K14_long,
                        x_axis = PTM,
                        y_axis = intensity,
                        condition = Condition,
-                       id_col = 'H3 (K9_K14)')
+                       id_col = sequence
+                       )['plots'][[1]]
 
 ```
 
@@ -291,7 +294,7 @@ plot_jitterbarIntvsPTM(dataset = df_K9K14_long,
 
 ```{r ridgeline plot, fig.width=7.2, fig.height=8}
 
-df <- read_xlsx(path = 'K9K14.xlsx')
+df <- read_xlsx(path = './docs/K9K14.xlsx')
 plot_intDensity(df = df, int_col = dplyr::starts_with("abundance_"))
 ```
 
@@ -299,10 +302,17 @@ plot_intDensity(df = df, int_col = dplyr::starts_with("abundance_"))
 
 ## 4.1 `quant_relIntensity()`
 
-Calculates the relative intensity of each peptide in each sample based on the following equation: \frac{\Sigma \;{\rm{intensities}}\;{\rm{of}}\;{\rm{peptidoforms}}\;{\rm{containing}}\;{\rm{the}}\;{\rm{considered}}\;{\rm{hPTM}}}{\Sigma \;{\rm{intensities}}\;{\rm{of}}\;{\rm{all}}\;{\rm{observed}}\;{\rm{modified}}\;{\rm{forms}}\;{\rm{of}}\;{\rm{the}}\;{\rm{peptide}}.}.
+# Calculation of Relative Intensity
+
+Calculates the relative intensity of each peptide in each sample based on the following equation:
+
+$$
+\frac{{\rm{intensity}}\;{\rm{of}}\;{\rm{a}}\;{\rm{peptidoform}}}
+{\Sigma \;{\rm{intensities}}\;{\rm{of}}\;{\rm{all}}\;{\rm{observed}}\;{\rm{modified}}\;{\rm{forms}}\;{\rm{of}}\;{\rm{the}}\;{\rm{peptide}}}.
+$$
 
 ```{r Calculate R.A}
-df_K9K14 <- readxl::read_excel(path = 'K9K14.xlsx') 
+df_K9K14 <- readxl::read_excel(path = './docs/K9K14.xlsx') 
 
 df_K9K14_norm <- quant_relIntensity(df = df_K9K14, 
                    select_cols = starts_with('abundance_'), 
@@ -324,7 +334,7 @@ df_K9K14_norm |> select(starts_with('abundance_')) |> head()
 When building a spectral library, `Skyline` can create two libraries. The main `*.blib` library and the second `*_redundant.blib`. In histones, some times the best representative spectrum could be present in the redundant library not in the main one. To keep everything neat, this function takes the identification from the redundant library and place it in the main library and place the main identification in the redundant library. To confirm the successful switch, the new identification will be highlighted in red and the other will turn black.
 
 ```{r Switch IDs Skyline Libraries}
-#blib_seamlessIDswap(db_main = , db_redundant = , rt = , mz = , tol = , file = )
+#blib_seamlessIDswap(db_main = , db_redundant = , rt = , mz = , tol = , file =  )
 ```
 
 # 6.Sequence Organization & Manipulation
@@ -363,14 +373,12 @@ litReview(start = 2023, end = 2024, term = "Tiziana Bonaldi[au]")
 
 ## 7.2 `ptm_Uniprot()`
 
-It gets PTMs identified by proteomics from <a href="https://www.uniprot.org/">Uniprot</a>
+It fetches PTMs identified by proteomics from [Uniprot](https://www.uniprot.org/) with the associated metadata.
 
 ```{r Uniprot Proteomics PTMs}
-accession <- 'P42858' #HTT protein
+accession <- 'P84243' #Histone H3.3
 
-df <- ptm_Uniprot(Uniprot_accession = accession)
+ptm_Uniprot(Uniprot_accession = accession)
 
-columns_to_show <- c('name', 'type','position', 'peptide', 'PEP', 'sources')
 
-df |> dplyr::select(all_of(columns_to_show))
 ```
