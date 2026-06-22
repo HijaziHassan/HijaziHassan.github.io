@@ -11,8 +11,7 @@ suppressPackageStartupMessages(library(icons))
 
 ```
 
-
-<button onclick="window.open(&#39;https://hijazihassan.github.io/files/cv-2025.pdf&#39;, &#39;_blank&#39;);" class="btn">
+<button onclick="window.open(&#39;https://hijazihassan.github.io/files/cv-2026.pdf&#39;, &#39;_blank&#39;);" class="btn">
 
 <i class="fa fa-download"></i>1-page CV</button>
 
@@ -20,14 +19,18 @@ suppressPackageStartupMessages(library(icons))
 
 ## Professional Experience
 
--   PostDoctoratal fellow (2025 - 2027): Studying protein–polysaccharides intereactions using advanced mass spectrometry techniques
-    -   INRAE, BIA unit, BIBS, mass spectrometry platform - Nantes/France
-    -   [This project aims to charactrize the interaction between the LRX8-RALF4 complex and pectin as part of WallScape joint project between france and switzerland. More specificically, I aim to: ]{style="font-size: 14px;"}
-        -  determine structural pectin features that dictate protein interaction
-        -  determine protein structure features that dictate pectin recognition
+-   Postdoctoral researcher (2025 - currently): Studying protein–polysaccharides interactions using advanced mass spectrometry techniques
 
+    -   INRAE, BIA unit, BIBS, mass spectrometry platform - Nantes/France
+
+    -   [This project aims to characterize the interaction between the LRX8-RALF4 complex and pectin as part of WallScape joint project between France and switzerland. More specifically, I aim to:]{style="font-size: 14px;"}
+
+        -   [determine structural pectin features that dictate protein interaction]{style="font-size: 14px;"}
+
+        -   [determine protein structure features that dictate pectin recognition]{style="font-size: 14px;"}
 
 -   PhD Project (2021 - 2025): Studying Perturbed Histone Acylations in Huntington's Disease by Proteomics
+
     -   EDyP Lab - CEA Grenoble/France
 
     -   [This project aims to identify and quantify differentially abundant histone post-translational modifications (hPTMs) between WT and Huntington's disease mouse models. For this purpose, I:]{style="font-size: 14px;"}
@@ -39,30 +42,36 @@ suppressPackageStartupMessages(library(icons))
         -   [I interrogated the data using Mascot for identification and Proline or Skyline for validation and quantification.]{style="font-size: 14px;"}
 
         -   [I manually validate the MS/MS spectra to confirm identifications, especially for combinatorial hPTM patterns and isobaric peptides.]{style="font-size: 14px;"}
-        
-        - [I analyzed proteomics data from stable isotope tracing experiment after heavy glucose injection in terms of heavy acetyl incorporation and other PTMs.]{style="font-size: 14px;"}
-        
-        - [I implemented and optimized histone derivatization protocols in the lab using either propionic or trimethylacetic anhydride.]{style="font-size: 14px;"}
-        
-        - [I wrote R scripts to organize and visualize the results. I ended up wrapping all the scripts in the form of an R package, which accelerated data analysis and ensured reproducibility and transparency in reporting the results end-to-end, in addition to plots that allow you to have a look at the result and also for quality checks to spot anomalies immediately.]{style="font-size: 14px;"}\
-        
-        
+
+        -   [I analyzed proteomics data from stable isotope tracing experiment after heavy glucose injection in terms of heavy acetyl incorporation and other PTMs.]{style="font-size: 14px;"}
+
+        -   [I implemented and optimized histone derivatization protocols in the lab using either propionic or trimethylacetic anhydride.]{style="font-size: 14px;"}
+
+        -   [I wrote R scripts to organize and visualize the results. I ended up wrapping all the scripts in the form of an R package, which accelerated data analysis and ensured reproducibility and transparency in reporting the results end-to-end, in addition to plots that allow you to have a look at the result and also for quality checks to spot anomalies immediately.]{style="font-size: 14px;"}\
+
 -   6-month internship (2021): Impact of detergents on sequencing membrane proteins using MALDI-MS
+
     -   Institut de Biologie Structurale (IBS) - Grenoble/France
 
     -   [Detergents are known to interfere with the protein mass spectra reducing the resolution and mass accuracy of the fragment ions. Thus it is important to remove of as much detergent as possible just before MALDI sequencing. During this internship, I screened a variety of detergents (non-ionic and zwitterionic) and explored their differential effects on different soluble proteins. I then investigated an *E. coli* membrane receptor, FhuA, as a case study illustrating the sequencing profiles of FhuA solubilized by different detergents.]{style="font-size: 14px;"}
 
         \
+
 -   6-month internship (2020): Ultradeep Sequence-Function Mapping of Prokaryotic Promoter Libraries
+
     -   Department of Biosystems Science and Engineering (D-BSSE) - ETH - Basel/Switzerland
 
     -   [Promoters are crucial for initiation of transcription and therefore regulation of gene expression. However, we still do not fully understand how a promoter sequence encodes its functional properties. This hampers the progress of synthetic biology and challenges its engineering discipline. To overcome this limitation, we adapted a recently developed DNA-based phenotyping approach (ultradeep Acquisition of Sequence-Phenotype Interrelations; uASPIre) to enable high throughout recording of prokaryotic promoters. We developed a double recombinase system that allows us to quantitatively measure sequence-function relationships of large promoter libraries with high temporal resolution. To better understand the underlying mechanisms, we further developed a computational model to predict expression and activity of Bxb1, one of the used recombinases.]{style="font-size: 14px;"}
 
 ## Publications
 
+[Histone derivatization with trimethyl-acetic anhydride for the in-depth characterization of glucose-sensitive acetylation sites using isotopic tracing]{style="font-weight: bold;"} (*in preparation*)
+
+[**Hassan Hijazi**, Hisham Altoufaily, Sabine Brugière, Salem Al Siblani, Amandine Barbaroux, Noémie Penaud, Karine Merienne, Delphine Pflieger]{style="font-size: 14px;"}
+
 [Both L-lactyl and D-lactyl enantiomers modify histones in mouse testis]{style="font-weight: bold;"}
 
-[ Julie Manessier, **Hassan Hijazi**, Lisa Vizzini, Sabine Brugière, Marie Courçon, Christophe Masselon, Delphine Pflieger]{style="font-size: 14px;"}
+[Julie Manessier, **Hassan Hijazi**, Lisa Vizzini, Sabine Brugière, Marie Courçon, Christophe Masselon, Delphine Pflieger]{style="font-size: 14px;"}
 
 [**Mol Cell Proteomics 2026**]{style="font-weight: bold; font-size: 12px;"}
 
@@ -70,7 +79,7 @@ suppressPackageStartupMessages(library(icons))
 
 [Impact of Arsenite on Transient and Persistent Histone H3 Modifications and Transcriptional Response]{style="font-weight: bold;"}
 
-[Tatjana Lumpp, **Hassan Hijazi**, Sandra Stößer,  Lara Brunner, Franziska Fischer, Sabine Brugière, Delphine Pflieger, Andrea Hartwig]{style="font-size: 14px;"}
+[Tatjana Lumpp, **Hassan Hijazi**, Sandra Stößer, Lara Brunner, Franziska Fischer, Sabine Brugière, Delphine Pflieger, Andrea Hartwig]{style="font-size: 14px;"}
 
 [**Chem. Res. Toxicol. 2026**]{style="font-weight: bold; font-size: 12px;"}
 
