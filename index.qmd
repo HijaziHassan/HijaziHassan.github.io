@@ -29,12 +29,10 @@ library(tinytex)
 suppressPackageStartupMessages(library(icons))
 ```
 
-## Hi there!
+## **Me at a glance!**
 
-Thank you for dropping by!
+Throughout my PhD journey, I gained skills in proteomics and programming to help decipher the histone PTM language.
 
-## Open to Work ...!
+In my current postdoctoral work, I am expanding my expertise in liquid chromatography mass spectrometry (LC MS) and diving into a new dimension of separation: ion mobility. It is the technique I highlighted in my PhD thesis as an essential next step for the histone PTM toolbox, and I am excited to finally explore it in depth.
 
-I am seeking a project where I can apply the knowledge and skills I've gained in proteomics and programming throughout my PhD journey.
-
-Ideally, this role would be at the intersection of wet and dry lab work, involving the acquisition, cleaning, and analysis of proteomics data in a clinical context related to human health.
+If you enjoy orbitraping around charged ideas, I am always up for a coffee and a chat {{< fa solid coffee >}}.
