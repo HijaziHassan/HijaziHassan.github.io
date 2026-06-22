@@ -20,6 +20,13 @@ suppressPackageStartupMessages(library(icons))
 
 ## Professional Experience
 
+-   PostDoctoratal fellow (2025 - 2027): Studying protein–polysaccharides intereactions using advanced mass spectrometry techniques
+    -   INRAE, BIA unit, BIBS, mass spectrometry platform - Nantes/France
+    -   [This project aims to charactrize the interaction between the LRX8-RALF4 complex and pectin as part of WallScape joint project between france and switzerland. More specificically, I aim to: ]{style="font-size: 14px;"}
+        -  determine structural pectin features that dictate protein interaction
+        -  determine protein structure features that dictate pectin recognition
+
+
 -   PhD Project (2021 - 2025): Studying Perturbed Histone Acylations in Huntington's Disease by Proteomics
     -   EDyP Lab - CEA Grenoble/France
 
@@ -52,6 +59,22 @@ suppressPackageStartupMessages(library(icons))
     -   [Promoters are crucial for initiation of transcription and therefore regulation of gene expression. However, we still do not fully understand how a promoter sequence encodes its functional properties. This hampers the progress of synthetic biology and challenges its engineering discipline. To overcome this limitation, we adapted a recently developed DNA-based phenotyping approach (ultradeep Acquisition of Sequence-Phenotype Interrelations; uASPIre) to enable high throughout recording of prokaryotic promoters. We developed a double recombinase system that allows us to quantitatively measure sequence-function relationships of large promoter libraries with high temporal resolution. To better understand the underlying mechanisms, we further developed a computational model to predict expression and activity of Bxb1, one of the used recombinases.]{style="font-size: 14px;"}
 
 ## Publications
+
+[Both L-lactyl and D-lactyl enantiomers modify histones in mouse testis]{style="font-weight: bold;"}
+
+[ Julie Manessier, **Hassan Hijazi**, Lisa Vizzini, Sabine Brugière, Marie Courçon, Christophe Masselon, Delphine Pflieger]{style="font-size: 14px;"}
+
+[**Mol Cell Proteomics 2026**]{style="font-weight: bold; font-size: 12px;"}
+
+[DOI](https://doi.org/10.1016/j.mcpro.2026.101601){.btn .btn-outline-primary .btn role="button" data-toggle="tooltip" title="Read the article online"}
+
+[Impact of Arsenite on Transient and Persistent Histone H3 Modifications and Transcriptional Response]{style="font-weight: bold;"}
+
+[Tatjana Lumpp, **Hassan Hijazi**, Sandra Stößer,  Lara Brunner, Franziska Fischer, Sabine Brugière, Delphine Pflieger, Andrea Hartwig]{style="font-size: 14px;"}
+
+[**Chem. Res. Toxicol. 2026**]{style="font-weight: bold; font-size: 12px;"}
+
+[DOI](https://pubs.acs.org/doi/10.1021/acs.chemrestox.5c00312){.btn .btn-outline-primary .btn role="button" data-toggle="tooltip" title="Read the article online"}
 
 [Mind Your Spectra: Bullet Points to Validate the Identification of Isobaric Histone Peptidoforms]{style="font-weight: bold;"}
 
